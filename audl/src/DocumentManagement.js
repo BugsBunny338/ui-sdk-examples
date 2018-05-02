@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './content.css';
 
+const homeScreen = require('./static/document-management/homescreen.jpg');
+const homeScreen2 = require('./static/document-management/homescreen2.jpg');
+const viewScreen = require('./static/document-management/viewscreen.jpg');
+const yourDashboard = require('./static/document-management/yourdashboard.jpg');
+const iconTag = require('./static/icon-tag.png');
 
 class DocumentManagement extends Component {
   render() {
@@ -21,7 +26,7 @@ class DocumentManagement extends Component {
         <div className="tag" >Date filters</div>
         <div className="horizontalBlock">
           <div className="shadowbox">
-            {/* <img className="cover" src={require('./static/seismic/Home screen.jpg')} /> */}
+            <img className="cover" src={homeScreen} alt="home screen" />
             <div className="shadowBoxTitle">
               <h3>Home dashboard</h3>
               <div className="caption">Compared role being hired with other potential roles.</div>
@@ -29,7 +34,7 @@ class DocumentManagement extends Component {
             </div>
           </div>
           <div className="shadowbox">
-            {/* <img className="cover" src={require('./static/seismic/Homepage V2.jpg')} /> */}
+            <img className="cover" src={homeScreen2} alt="home screen 2" />
             <div className="shadowBoxTitle">
               <h3>News screen</h3>
               <div className="caption">Compare active credit card with other options.</div>
@@ -37,7 +42,7 @@ class DocumentManagement extends Component {
             </div>
           </div>
           <div className="shadowbox">
-            {/* <img className="cover" src={require('./static/seismic/View screen.jpg')} /> */}
+            <img className="cover" src={viewScreen} alt="view screen" />
             <div className="shadowBoxTitle">
               <h3>View screen</h3>
               <div className="caption">Compare performance of specific pieces of content.</div>
@@ -46,7 +51,7 @@ class DocumentManagement extends Component {
           </div>
           <div className="shadowbox">
             <div className="shadowbox">
-              {/* <img className="cover" src={require('./static/seismic/Your Dashboard.jpg')} /> */}
+              <img className="cover" src={yourDashboard} alt="your dashboard" />
               <div className="shadowBoxTitle">
                 <h3>KPI dashboards</h3>
                 <div className="caption">Embedded KPI dashboard to for collecting &amp; sharing insights</div>
@@ -56,7 +61,7 @@ class DocumentManagement extends Component {
           </div>
         </div>
         <div className="downloadBlock">
-          {/* <img src={require('./static/icon-tag.png')} /> */}
+          <img src={iconTag} alt="icon tag" />
           <a href="">Download template</a>
         </div>
       </div>
