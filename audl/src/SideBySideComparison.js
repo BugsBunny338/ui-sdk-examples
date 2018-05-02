@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 const sideBySide1 = require('./static/organisms_side-by-side-comparison/sideBySide-ex1.png');
 const sideBySide2 = require('./static/organisms_side-by-side-comparison/sideBySide-ex2.png');
 const sideBySide3 = require('./static/organisms_side-by-side-comparison/sideBySide-ex3.png');
-const mockupCodeDatePicker = require('./static/molecules/mockupcode-date-picker.png');
+const mockupCodeDatePicker = require('./static/molecules/mockup-code-date-picker.png');
 
 class SideBySide extends Component {
   render() {

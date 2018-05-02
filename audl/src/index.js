@@ -13,6 +13,7 @@ import GettingStarted from './GettingStarted';
 import DocumentManagement from './DocumentManagement';
 import NavigationHomepage from './NavigationHomepage';
 import SideBySideComparison from './SideBySideComparison';
+import FilterDate from './FilterDate';
 import Empty from './Empty';
 
 import './index.css';
@@ -30,6 +31,7 @@ ReactDOM.render(
         <Route path="/empty" component={Empty} />
         <Route path="/organisms/navigation-homepage" component={NavigationHomepage} />
         <Route path="/organisms/side-by-side-comparison" component={SideBySideComparison} />
+        <Route path="/molecules/filter-date" component={FilterDate} />
       </App>
     </HashRouter>
   </Provider>,

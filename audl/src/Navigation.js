@@ -32,7 +32,7 @@ class Navigation extends Component {
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Columnchart</Link></li>
 
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Linechart</Link></li>
-            <li><Link className={`MenuItem Child ${isActive}`} to="/MoleculeDateFilter">Filter - Date</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/molecules/filter-date">Filter - Date</Link></li>
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Filter - Attribute</Link></li>
 
             <li><Link className={`MenuItem Section ${isActive}`} to="/empty">Atoms</Link></li>
