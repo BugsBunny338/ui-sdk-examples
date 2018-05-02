@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './content.css';
 
+const iconAtom = require('./static/icon-atom.png');
+const iconMolecule = require('./static/icon-molecule.png');
+const iconOrganism = require('./static/icon-organism.png');
+const iconSolution = require('./static/icon-solution.png');
+const iconInteractions = require('./static/icon-interactions.png');
 
 class GettingStarted extends Component {
   render() {
@@ -14,7 +19,7 @@ class GettingStarted extends Component {
         <p>Atomic design is a helpful design system to help us think about interfaces both a cohesive whole and a collection of parts at the same time. It decomposes user interfaces to building blocks of different granularities:</p>
         <div className="horizontalBlock">
           <div className="shadowbox">
-            {/* <div className="ratiowrapper4to3"><img className="icon" src={require('./static/icon-atom.png')} /></div> */}
+            <div className="ratiowrapper4to3"><img className="icon" src={iconAtom} alt="icon-atom" /></div>
             <div className="shadowBoxTitle">
               <b>Atoms</b> are the basic building blocks of all matter (and the interface). Each atom has distinct properties, and they can’t be broken down further without losing their meaning.
               <h5>Examples:</h5>
@@ -25,7 +30,7 @@ class GettingStarted extends Component {
             </div>
           </div>
           <div className="shadowbox">
-            {/* <div className="ratiowrapper4to3"><img className="icon" src={require('./static/icon-molecule.png')} /></div> */}
+            <div className="ratiowrapper4to3"><img className="icon" src={iconMolecule} alt="icon-molecule" /></div>
             <div className="shadowBoxTitle">
               <b>Molecules</b> are groups of two or more atoms held together by (chemical) bonds. These combinations of atoms take on their own unique properties, and become more tangible and operational than atoms.
               <h5>Examples:</h5>
@@ -36,7 +41,7 @@ class GettingStarted extends Component {
             </div>
           </div>
           <div className="shadowbox">
-            {/* <div className="ratiowrapper4to3"><img className="icon" src={require('./static/icon-organism.png')} /></div> */}
+            <div className="ratiowrapper4to3"><img className="icon" src={iconOrganism} alt="icon-organism" /></div>
             <div className="shadowBoxTitle">
               <b>Organisms</b> are assemblies of molecules functioning together as a unit. These relatively complex structures can range from single-celled organisms all the way up to incredibly sophisticated organisms like human beings.
               <h5>Examples:</h5>
@@ -47,7 +52,7 @@ class GettingStarted extends Component {
             </div>
           </div>
           <div className="shadowbox">
-            {/* <div className="ratiowrapper4to3"><img className="icon" src={require('./static/icon-solution.png')} /></div> */}
+            <div className="ratiowrapper4to3"><img className="icon" src={iconSolution} alt="icon-solution" /></div>
             <div className="shadowBoxTitle">
               <b>Solutions</b> are assemblies of organisms functioning together to solve a given business problem for one particular client. Solution contains everything from smooth user experience to brilliant visual design.
               <h5>Examples:</h5>
@@ -60,10 +65,7 @@ class GettingStarted extends Component {
         </div>
         <div className="horizontalBlock">
           <div className="shadowbox centeredTextBlock">
-            <a href="">
-              {/* <img className="icon" src={require('./static/icon-interactions.png')} /> */}
-               Interactions
-            </a> such as drills, filtering and custom events tie individual blocks together to make them work.
+            <a href=""><img className="icon" src={iconInteractions} alt="icon-interactions" />Interactions</a> such as drills, filtering and custom events tie individual blocks together to make them work.
           </div>
         </div>
       </div>
