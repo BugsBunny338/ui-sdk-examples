@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router';
-import { HashRouter } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
+import gooddata from '@gooddata/gooddata-js';
 
 import App from './App';
 import configureStore from './configureStore';
@@ -14,17 +15,20 @@ import DocumentManagement from './DocumentManagement';
 import NavigationHomepage from './NavigationHomepage';
 import SideBySideComparison from './SideBySideComparison';
 import FilterDate from './FilterDate';
+import Kpi from './Kpi';
 import Empty from './Empty';
 
 import './index.css';
 import './content.css';
 
 
+window.gooddata = gooddata;
+
 const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <HashRouter>
+    <Router>
       <App>
         <Route exact path="/" component={GettingStarted} />
         <Route path="/document-management" component={DocumentManagement} />
@@ -32,9 +36,11 @@ ReactDOM.render(
         <Route path="/organisms/navigation-homepage" component={NavigationHomepage} />
         <Route path="/organisms/side-by-side-comparison" component={SideBySideComparison} />
         <Route path="/molecules/filter-date" component={FilterDate} />
+        <Route path="/atoms/kpi" component={Kpi} />
       </App>
-    </HashRouter>
+    </Router>
   </Provider>,
   document.getElementById('root'),
 );
+
 registerServiceWorker();

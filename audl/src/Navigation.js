@@ -37,7 +37,7 @@ class Navigation extends Component {
 
             <li><Link className={`MenuItem Section ${isActive}`} to="/empty">Atoms</Link></li>
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Label</Link></li>
-            <li><Link className={`MenuItem Child ${isActive}`} to="/KpiPlayground">KPI</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/atoms/kpi">KPI</Link></li>
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Legend</Link></li>
 
             <li><Link className={`MenuItem Section ${isActive}`} to="/empty">Interactions</Link></li>

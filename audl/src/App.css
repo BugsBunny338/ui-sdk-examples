@@ -73,8 +73,13 @@ background-color: #313541;
    text-align: center;
 }
 
-.LeftNavLogo > img {
+.LeftNavLogo img {
    width: 50%
+}
+
+.LeftNavLogo a {
+  color: #777;
+  text-decoration: none;
 }
 
 .LeftNavBlock > input {
