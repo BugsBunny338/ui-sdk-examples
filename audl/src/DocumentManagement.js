@@ -9,7 +9,7 @@ const iconTag = require('./static/icon-tag.png');
 class DocumentManagement extends Component {
   render() {
     return (
-      <div className="mainscreen">
+      <div className="mainscreen document-management">
         <h1>Document Management</h1>
         <h2>Seismic</h2>
         <p>A polished solution application handling document management including monitoring of usage, etc...</p>
