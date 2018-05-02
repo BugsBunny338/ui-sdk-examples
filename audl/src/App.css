@@ -71,6 +71,7 @@ background-color: #313541;
 .LeftNavLogo {
    width: 100%;
    text-align: center;
+   border-top: 0;
 }
 
 .LeftNavLogo img {

@@ -19,6 +19,7 @@
   "dependencies": {
     "@gooddata/gooddata-js": "^6.0.0-alpha9",
     "@gooddata/react-components": "^4.1.0",
+    "classnames": "^2.2.5",
     "prop-types": "^15.6.0",
     "react": "15.3.2",
     "react-dom": "15.3.2",
