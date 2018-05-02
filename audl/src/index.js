@@ -2,17 +2,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { Route } from 'react-router';
+import { HashRouter } from 'react-router-dom';
 
-import './index.css';
 import App from './App';
+import GettingStarted from './GettingStarted';
+import DocumentManagement from './DocumentManagement';
 import configureStore from './configureStore';
 import registerServiceWorker from './registerServiceWorker';
+
+import './index.css';
+import './content.css';
+
 
 const store = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <HashRouter>
+      <App>
+        <Route exact path="/" component={GettingStarted} />
+        <Route path="/document-management" component={DocumentManagement} />
+      </App>
+    </HashRouter>
   </Provider>,
   document.getElementById('root'),
 );

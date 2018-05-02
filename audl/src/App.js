@@ -5,7 +5,7 @@ import './App.css';
 
 const logo = require('./static/logo.png');
 
-const App = () => (
+const App = ({ children }) => (
   <div className="App">
     <div className="ContentContainer">
       <div className="LeftNavContainer">
@@ -16,7 +16,7 @@ const App = () => (
         <Navigation />
       </div>
       <div className="Content">
-        Content
+        {children}
       </div>
     </div>
   </div>

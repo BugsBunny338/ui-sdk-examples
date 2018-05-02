@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 class Navigation extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { screen: 'GettingStarted' };
-  }
-
   render() {
-    var isActive = isActive ? 'active' : '';
+    const isActive = 'active'; // TODO
 
     return (
       <div className="Navigation">
@@ -17,40 +13,38 @@ class Navigation extends Component {
         </div>
         <div className="LeftNavBlock">
           <ul className="ul">
-            <li><div className={`MenuItem Section ${isActive}`} onClick={() => (this.props.onNavigate('GettingStarted'))}>Getting started</div></li>
-            <li><div className="MenuItem Section" onClick={() => (this.props.onNavigate('Organisms'))}>Solutions</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Boilerplate'))}>Default boilerplate</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('DocumentManagement'))}>Document Management</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('TrafficAnalysis'))}>Traffic Analysis</div></li>
+            <li><Link className={`MenuItem Section ${isActive}`} to="/">Getting started</Link></li>
+            <li><Link className={`MenuItem Section ${isActive}`} to="/Organisms">Solutions</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Boilerplate">Default boilerplate</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/document-management">Document Management</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/TrafficAnalysis">Traffic Analysis</Link></li>
 
-            <li><div className="MenuItem Section" onClick={() => (this.props.onNavigate('Empty'))}>Organisms</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Navigation: top</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Navigation: left</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('NavigationHome'))}>Navigation: Homepage</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Embedded Analytical Designer</div></li>
+            <li><Link className={`MenuItem Section ${isActive}`} to="/Empty">Organisms</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Navigation: top</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Navigation: left</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/NavigationHome">Navigation: Homepage</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Embedded Analytical Designer</Link></li>
 
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('SideBySide'))}>Side-by-side comparison</div></li>
-            <li><div className="MenuItem Section" onClick={() => (this.props.onNavigate('Empty'))}>Molecules</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>KPI block</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Barchart</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Columnchart</div></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/SideBySide">Side-by-side comparison</Link></li>
+            <li><Link className={`MenuItem Section ${isActive}`} to="/Empty">Molecules</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">KPI block</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Barchart</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Columnchart</Link></li>
 
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Linechart</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('MoleculeDateFilter'))}>Filter - Date</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Filter - Attribute</div></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Linechart</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/MoleculeDateFilter">Filter - Date</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Filter - Attribute</Link></li>
 
+            <li><Link className={`MenuItem Section ${isActive}`} to="/Empty">Atoms</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Label</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/KpiPlayground">KPI</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Legend</Link></li>
 
-            <li><div className="MenuItem Section" onClick={() => (this.props.onNavigate('Empty'))}>Atoms</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Label</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('KpiPlayground'))}>KPI</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Legend</div></li>
-
-            <li><div className="MenuItem Section" onClick={() => (this.props.onNavigate('Empty'))}>Interactions</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Open in AD</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Visual filters</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Exporting</div></li>
-            <li><div className="MenuItem Child" onClick={() => (this.props.onNavigate('Empty'))}>Eventing</div></li>
-
+            <li><Link className={`MenuItem Section ${isActive}`} to="/Empty">Interactions</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Open in AD</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Visual filters</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Exporting</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/Empty">Eventing</Link></li>
           </ul>
         </div>
       </div>

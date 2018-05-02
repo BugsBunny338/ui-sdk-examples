@@ -1,0 +1,226 @@
+body {
+font-family: Helvetica, Sans-Serif;
+color: #777;
+font-weight: 100;
+line-height: 140%;
+}
+
+h1 {
+font-family: Helvetica, Sans-Serif;
+color: #14B2E2;
+font-size: 3em;
+font-weight: 100;
+margin-bottom: 0.5em;
+}
+
+h2 {
+color: #14B2E2;
+font-size: 1.6em;
+font-weight: 100;
+padding-top: 30px;
+margin-bottom:15px;
+}
+
+h3 {
+color: #333;
+font-size: 1.2em;
+font-weight: 100;
+padding: 0.3em 0px 0.3em 0px;
+margin: 0px;
+}
+
+h4 {
+font-size: 0.9em;
+padding: 0.5em 0px 0.1em 0px;
+margin: 0px;
+}
+
+
+h5 {
+font-size: 0.7em;
+padding: 1em 0px 0.1em 0px;
+margin: 0px;
+text-transform: uppercase;
+}
+
+
+hr {
+color: #ccc;
+}
+
+a {
+color: #14B2E2;
+display: inline;
+}
+
+p {
+margin-bottom: 10px;
+}
+
+ul {
+margin: 4px 0px 4px 0px;
+list-style-type: none;
+padding-left: 0px;
+}
+
+.examples li {
+font-size: 0.9em;
+}
+
+.caption {
+font-size: 0.8em;
+font-color: #999;
+}
+
+.right {
+display: inline-block;
+text-align: right;
+}
+
+.left {
+text-align:left;
+}
+
+.tag {
+display: inline-block;
+
+color: #999;
+background: #efefef;
+border: 1px dashed #ccc;
+margin: 5px 10px 5px 0px;
+padding: 3px 7px;
+text-transform: capitalize;
+font-size: 0.8em;
+border-radius: 5px;
+}
+
+.mainscreen {
+}
+
+.subtitle {
+color: #aaa;
+margin-top: 16px;
+margin-bottom: 16px;
+font-size: 1.2em;
+font-weight: 200;
+}
+
+.horizontalBlock {
+display:flex;
+flex-direction: row;
+align-items: stretch;
+flex-wrap: nowrap;
+width: 100%;
+padding: 15px 0px 15px 0px;
+}
+
+.centeredTextBlock {
+flex: 1 0 25%;
+align-content:center;
+text-align: center;
+padding: 10px 3% 10px 3%;
+box-sizing:border-box;
+min-width: 200px;
+}
+
+
+
+.shadowbox {
+flex: 1 1 25%;
+width: 100%;
+display: flex;
+flex-direction: column;
+border: 1px solid #ccc;
+box-shadow: 1px 1px 6px #ddd;
+margin-right: 25px;
+border-radius: 5px;
+}
+
+.shadowBoxTitle {
+background-color: white;
+padding: 15px;
+border-top: 1px solid #ddd;
+}
+
+.downloadBlock {
+margin-top: 10px;
+padding: 10px;
+border: 1px dashed #ccc;
+width: 160px;
+display: flex;
+flex-direction: row;
+justify-content: left;
+border-radius: 5px;
+}
+
+.downloadBlock img {
+
+}
+
+.downloadBlock a {
+padding: 6px 0px 0px 10px;
+font-size: 0.8em;
+}
+
+
+.shadowbox > .card {
+flex: 1  0  80px;
+background-color: #999;
+}
+
+.ratiowrapper4to3 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+
+.icon { /* image style */
+width: 8vw;
+height: 8vw;
+margin: 0.5vw auto;
+}
+
+.cover { /* image style */
+margin: 0px;
+width: 100%;
+height: 10vw;
+overflow: hidden;
+object-position: left top;
+}
+
+.prism-code {
+font-size: 1.5em;
+}
+
+.prism-code .token.attr-name {
+/* color: blue; */
+}
+
+.react-live-preview {
+margin-top: 20px;
+border: 2px solid black;
+height: 2em;
+}
+
+.react-live-error {
+color: red;
+margin-top: 5px;
+}
+
+.gdc-kpi {
+margin: 0;
+padding: 0;
+background-color: transparent;
+padding-left: 5px;
+font-size: 1.5em;
+line-height: 1.5em;
+}
+
+.gdc-kpi span {
+}
+
+pre {
+white-space: pre-wrap;
+font-size: 1.3em;
+}
