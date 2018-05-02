@@ -1,57 +1,57 @@
 // Copyright (C) 2007-2017, GoodData(R) Corporation. All rights reserved.
-import { MEASURE_1 } from './measures' // default measure
-import C from './catalog.json'
+import { MEASURE_1 } from './measures'; // default measure
+import C from './catalog.json';
 
 export const measure = (state = { name: MEASURE_1, id: C[MEASURE_1] }, action) => {
   switch (action.type) {
     // Used by both SimpleSwitcherDemo and BetterSwitcherDemo
-    case "SET_MEASURE":
+    case 'SET_MEASURE':
       return {
         ...state,
         id: C[action.measure],
         newName: action.measure,
-        error: false // new request starts, let's clean up errors
-      }
+        error: false, // new request starts, let's clean up errors
+      };
 
     // These actions are only relevant for the BetterSwitcherDemo
-    case "LOADING_CHANGED":
+    case 'LOADING_CHANGED':
       if (!action.isLoading) {
         return {
           ...state,
-          name: state.newName
-        }
-      } else {
-        return state
+          name: state.newName,
+        };
       }
+      return state;
 
-    case "ERROR":
+
+    case 'ERROR':
       return {
         ...state,
-        error: true
-      }
+        error: true,
+      };
 
     default:
-      return state
+      return state;
   }
-}
+};
 
 // The following reducers are only used by the BetterSwitcherDemo
 export const isLoading = (state = false, action) => {
   switch (action.type) {
-    case "LOADING_CHANGED":
-      return action.isLoading
+    case 'LOADING_CHANGED':
+      return action.isLoading;
     default:
-      return state
+      return state;
   }
-}
+};
 
 export const error = (state = null, action) => {
   switch (action.type) {
-    case "ERROR":
-      return action.error
-    case "LOADING_CHANGED":
-      return null
+    case 'ERROR':
+      return action.error;
+    case 'LOADING_CHANGED':
+      return null;
     default:
-      return state
+      return state;
   }
-}
+};
