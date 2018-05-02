@@ -119,15 +119,10 @@ background-color: #313541;
    text-decoration: none;
 }
 
-.LeftNavBlock li .MenuItem:hover {
+.LeftNavBlock li a.MenuItem:hover,
+.LeftNavBlock li a.MenuItem.active {
    color: #14B2E2;
-
 }
-
-.LeftNavBlock li .MenuItem:active {
-   color: black;
-}
-
 
 .App-header {
   background-color: #222;

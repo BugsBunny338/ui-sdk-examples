@@ -6,10 +6,12 @@ import { Route } from 'react-router';
 import { HashRouter } from 'react-router-dom';
 
 import App from './App';
-import GettingStarted from './GettingStarted';
-import DocumentManagement from './DocumentManagement';
 import configureStore from './configureStore';
 import registerServiceWorker from './registerServiceWorker';
+
+import GettingStarted from './GettingStarted';
+import DocumentManagement from './DocumentManagement';
+import Empty from './Empty';
 
 import './index.css';
 import './content.css';
@@ -23,6 +25,7 @@ ReactDOM.render(
       <App>
         <Route exact path="/" component={GettingStarted} />
         <Route path="/document-management" component={DocumentManagement} />
+        <Route path="/empty" component={Empty} />
       </App>
     </HashRouter>
   </Provider>,
