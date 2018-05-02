@@ -2,7 +2,7 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createLogger } from 'redux-logger';
-import { measure, isLoading, error } from './reducers';
+import { search } from './reducers';
 
 const configureStore = () => {
   const middlewares = [];
@@ -11,7 +11,9 @@ const configureStore = () => {
   }
 
   const store = createStore(
-    combineReducers({ measure, isLoading, error }),
+    combineReducers({
+      search,
+    }),
     composeWithDevTools(applyMiddleware(...middlewares)),
   );
 

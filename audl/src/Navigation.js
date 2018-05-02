@@ -4,7 +4,24 @@ import cx from 'classnames';
 import './App.css';
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      searchString: '',
+    };
+
+    this.search = this.search.bind(this);
+  }
+
+  search(e) {
+    this.setState({
+      searchString: e.target.value,
+    });
+  }
+
   render() {
+    const { searchString } = this.state;
     const hash = window.location.hash.slice(1);
     const menuItems = [
       { title: 'Getting Started', section: true, path: '/' },
@@ -35,7 +52,7 @@ class Navigation extends Component {
 
       { title: 'Interactions', section: true, path: '/empty' },
       { title: 'Open in AD', path: '/empty' },
-      { title: 'Visual filtersKpi', path: '/atoms/kpi' },
+      { title: 'Visual filters', path: '/empty' },
       { title: 'Exporting', path: '/empty' },
       { title: 'Eventing', path: '/empty' },
     ];
@@ -43,28 +60,31 @@ class Navigation extends Component {
     return (
       <div className="Navigation">
         <div className="LeftNavBlock">
-          <input type="text" placeholder="Search..." />
+          <input type="search" placeholder="Search…" onChange={this.search} />
         </div>
         <div className="LeftNavBlock">
           <ul className="ul">
             {
-              menuItems.map((menuItem) => {
-                const Tag = menuItem.path ? Link : 'span';
-                const props = {
-                  to: menuItem.path,
-                };
-                const className = cx('MenuItem', {
-                  Section: menuItem.section,
-                  Child: !menuItem.section,
-                  active: menuItem.path === hash && hash !== '/empty',
-                });
+              menuItems
+                .filter(menuItem =>
+                  menuItem.title.toLowerCase().indexOf(searchString) !== -1)
+                .map((menuItem) => {
+                  const Tag = menuItem.path ? Link : 'span';
+                  const props = {
+                    to: menuItem.path,
+                  };
+                  const className = cx('MenuItem', {
+                    Section: menuItem.section,
+                    Child: !menuItem.section,
+                    active: menuItem.path === hash && hash !== '/empty',
+                  });
 
-                return (
-                  <li>
-                    <Tag className={className} {...props}>{menuItem.title}</Tag>
-                  </li>
-                );
-              })
+                  return (
+                    <li>
+                      <Tag className={className} {...props}>{menuItem.title}</Tag>
+                    </li>
+                  );
+                })
             }
           </ul>
         </div>
