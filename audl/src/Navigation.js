@@ -38,16 +38,13 @@ class Navigation extends Component {
       { title: 'Side-by-Side Comparison', path: '/organisms/side-by-side-comparison' },
 
       { title: 'Molecules', section: true, path: '/empty' },
-      { title: 'KPI block', path: '/empty' },
-      { title: 'BarChart', path: '/empty' },
-      { title: 'ColumnChart', path: '/empty' },
-      { title: 'LineChart', path: '/empty' },
+      { title: 'Chart', path: '/molecules/chart' },
       { title: 'Filter - Date', path: '/molecules/filter-date' },
       { title: 'Filter - Attribute', path: '/empty' },
 
       { title: 'Atoms', section: true, path: '/empty' },
-      { title: 'Label', path: '/empty' },
       { title: 'Kpi', path: '/atoms/kpi' },
+      { title: 'Label', path: '/empty' },
       { title: 'Legend', path: '/empty' },
 
       { title: 'Interactions', section: true, path: '/empty' },

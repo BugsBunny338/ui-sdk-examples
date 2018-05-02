@@ -14,6 +14,7 @@ import GettingStarted from './GettingStarted';
 import DocumentManagement from './DocumentManagement';
 import NavigationHomepage from './NavigationHomepage';
 import SideBySideComparison from './SideBySideComparison';
+import Chart from './ChartPage';
 import FilterDate from './FilterDate';
 import Kpi from './Kpi';
 import Empty from './Empty';
@@ -35,6 +36,7 @@ ReactDOM.render(
         <Route path="/empty" component={Empty} />
         <Route path="/organisms/navigation-homepage" component={NavigationHomepage} />
         <Route path="/organisms/side-by-side-comparison" component={SideBySideComparison} />
+        <Route path="/molecules/chart" component={Chart} />
         <Route path="/molecules/filter-date" component={FilterDate} />
         <Route path="/atoms/kpi" component={Kpi} />
       </App>

@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { Kpi } from '@gooddata/react-components';
+import { AfmComponents } from '@gooddata/react-components';
 import Playground from './components/Playground';
 
+const {
+  BarChart,
+  LineChart,
+  ColumnChart,
+} = AfmComponents;
 
-class KpiPage extends Component {
+class ChartPage extends Component {
   render() {
     const ATTR_REGION = 'label.owner.region';
     const ATTR_EL_REGION_EAST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1225';
@@ -14,7 +19,9 @@ class KpiPage extends Component {
     const ATTR_EL_DEPARTMENT_INSIDE = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1234';
 
     const scope = {
-      Kpi,
+      BarChart,
+      LineChart,
+      ColumnChart,
       ATTR_REGION,
       ATTR_EL_REGION_EAST,
       ATTR_EL_REGION_WEST,
@@ -24,43 +31,46 @@ class KpiPage extends Component {
     };
 
     const scopeDesc = `
-// Following are the constants in scope for this playground:
+// Following are the available components in scope for this playground:
 
-const ATTR_REGION = 'label.owner.region';
-const ATTR_EL_REGION_EAST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1225';
-const ATTR_EL_REGION_WEST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1237';
-
-const ATTR_DEPARTMENT = 'label.owner.department';
-const ATTR_EL_DEPARTMENT_DIRECT = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1226';
-const ATTR_EL_DEPARTMENT_INSIDE = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1234';`;
+<BarChart />
+<LineChart />
+<ColumnChart />`;
 
     return (
       <div className="mainscreen">
         <Playground
-          title="Kpi"
+          title="Chart"
           scope={scope}
           scopeDesc={scopeDesc}
           code={`render(
-  <Kpi
+  <BarChart
     projectId="fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk"
-    measure="abf0d42yaIkL"
-    format="$#,##0"
-    filters={[{
-      positiveAttributeFilter: {
+    afm={{
+      measures: [{
+        localIdentifier: 'm1',
+        definition: {
+          measure: {
+            item: {
+              uri: '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/14636'
+            }
+          }
+        }
+      }],
+      attributes: [{
+        localIdentifier: 'a1',
         displayForm: {
-          identifier: ATTR_DEPARTMENT
-        },
-        in: [ATTR_EL_DEPARTMENT_DIRECT]
-      }
-    }]}
-    LoadingComponent={() => <span>Loading…</span>}
+          uri: '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1252'
+        }
+      }]
+    }}
   />
 )`}
-          livePreviewClassname="kpi"
+          livePreviewClassname="chart"
         />
       </div>
     );
   }
 }
 
-export default KpiPage;
+export default ChartPage;

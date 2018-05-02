@@ -12,6 +12,7 @@ export default ({
   scope,
   scopeDesc,
   code,
+  livePreviewClassname,
 }) => (
   <div className="playground">
     <h1>{title}</h1>
@@ -26,7 +27,7 @@ export default ({
       <LiveEditor />
       <LiveError />
       <h2>Preview</h2>
-      <LivePreview />
+      <LivePreview className={livePreviewClassname} />
     </LiveProvider>
   </div>
 );

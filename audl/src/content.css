@@ -200,7 +200,16 @@ font-size: 1.5em;
 .react-live-preview {
 margin-top: 20px;
 border: 2px solid black;
-height: 2em;
+}
+
+.react-live-preview.kpi {
+    height: 2em;
+}
+
+.react-live-preview.chart,
+.react-live-preview.chart > div,
+.react-live-preview.chart > div > div {
+    height: 600px;
 }
 
 .react-live-error {
