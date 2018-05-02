@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './content.css';
 
 const homeScreen = require('./static/document-management/homescreen.jpg');
 const homeScreen2 = require('./static/document-management/homescreen2.jpg');

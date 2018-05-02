@@ -12,6 +12,7 @@ import registerServiceWorker from './registerServiceWorker';
 import GettingStarted from './GettingStarted';
 import DocumentManagement from './DocumentManagement';
 import NavigationHomepage from './NavigationHomepage';
+import SideBySideComparison from './SideBySideComparison';
 import Empty from './Empty';
 
 import './index.css';
@@ -28,6 +29,7 @@ ReactDOM.render(
         <Route path="/document-management" component={DocumentManagement} />
         <Route path="/empty" component={Empty} />
         <Route path="/organisms/navigation-homepage" component={NavigationHomepage} />
+        <Route path="/organisms/side-by-side-comparison" component={SideBySideComparison} />
       </App>
     </HashRouter>
   </Provider>,

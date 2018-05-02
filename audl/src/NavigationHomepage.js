@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './content.css';
 
 const navHome1 = require('./static/organisms_navigation-homepage/navHome-ex1.png');
 const navHome2 = require('./static/organisms_navigation-homepage/navHome-ex2.png');

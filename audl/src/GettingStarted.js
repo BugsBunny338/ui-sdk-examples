@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './content.css';
 
 const iconAtom = require('./static/icon-atom.png');
 const iconMolecule = require('./static/icon-molecule.png');

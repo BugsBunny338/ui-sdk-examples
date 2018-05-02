@@ -25,7 +25,7 @@ class Navigation extends Component {
             <li><Link className={`MenuItem Child ${isActive}`} to="/organisms/navigation-homepage">Navigation: Homepage</Link></li>
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Embedded Analytical Designer</Link></li>
 
-            <li><Link className={`MenuItem Child ${isActive}`} to="/SideBySide">Side-by-side comparison</Link></li>
+            <li><Link className={`MenuItem Child ${isActive}`} to="/organisms/side-by-side-comparison">Side-by-side comparison</Link></li>
             <li><Link className={`MenuItem Section ${isActive}`} to="/empty">Molecules</Link></li>
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">KPI block</Link></li>
             <li><Link className={`MenuItem Child ${isActive}`} to="/empty">Barchart</Link></li>
