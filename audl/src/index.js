@@ -11,6 +11,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import GettingStarted from './GettingStarted';
 import DocumentManagement from './DocumentManagement';
+import NavigationHomepage from './NavigationHomepage';
 import Empty from './Empty';
 
 import './index.css';
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Route exact path="/" component={GettingStarted} />
         <Route path="/document-management" component={DocumentManagement} />
         <Route path="/empty" component={Empty} />
+        <Route path="/organisms/navigation-homepage" component={NavigationHomepage} />
       </App>
     </HashRouter>
   </Provider>,

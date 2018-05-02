@@ -47,21 +47,25 @@ background-color: #313541;
   /* width:100%; */
   padding: 45px 80px;
   box-sizing:content-box;
+  margin-left: 300px;
 }
 
 .LeftNavContainer {
   flex: 0 0 285px;
   display: flex;
   flex-direction:column;
-  /* width:285px; */
+  width: 300px;
   background-color: white;
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
   border-right: 1px solid #d9d9d9;
 }
 
 .LeftNavBlock {
    border-top: 1px solid #d9d9d9;
    padding: 16px 20px;
-   box-sizing:border-box;
+   box-sizing: border-box;
 }
 
 .LeftNavLogo {
