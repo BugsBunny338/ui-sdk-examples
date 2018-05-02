@@ -1,4 +1,154 @@
-/* Copyright (C) 2007-2017, GoodData(R) Corporation. All rights reserved. */
-.App, .Demo {
-  margin: 1em;
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.TopNavContainer, .FooterContainer{
+display:flex;
+background-color: #313541;
+
+}
+
+.TopNav {
+  flex: 1 0 auto;
+
+  align-self: center;
+  padding: 20px;
+  font-size: 14pt;
+  color: #ccc;
+}
+
+.UserStatus {
+   flex: 0 1 auto;
+   padding: 20px;
+
+   color: #ccc;
+}
+
+.Footer {
+  flex: 1 0 auto;
+
+  width:100%;
+  height:100%;
+  padding: 5px 20px 5px 20px;
+  font-size: 10pt;
+  color: #666;
+  background-color: rgba(100, 100, 100, 0.2);
+}
+
+.ContentContainer {
+  display:flex;
+  flex: 1 1 auto; /* makes sure the footer is at the bottom */
+}
+
+.Content {
+  flex:1 1 auto;
+  /* width:100%; */
+  padding: 45px 80px;
+  box-sizing:content-box;
+}
+
+.LeftNavContainer {
+  flex: 0 0 285px;
+  display: flex;
+  flex-direction:column;
+  /* width:285px; */
+  background-color: white;
+  border-right: 1px solid #d9d9d9;
+}
+
+.LeftNavBlock {
+   border-top: 1px solid #d9d9d9;
+   padding: 16px 20px;
+   box-sizing:border-box;
+}
+
+.LeftNavLogo {
+   width: 100%;
+   text-align: center;
+}
+
+.LeftNavLogo > img {
+   width: 50%
+}
+
+.LeftNavBlock > input {
+   color: #333;
+   font-size: 1em;
+   border: 0px;
+   padding: 5px 10px 5px 10px;
+}
+
+.LeftNavBlock > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: #ccc;
+}
+
+.LeftNavBlock > input:focus { /* Chrome/Opera/Safari */
+   outline: none;
+}
+
+.LeftNavMenu {
+   flex: 1 0 auto;
+}
+
+.menuSection {
+   padding: 20px 0px 20px 0px ;
+}
+
+.LeftNavBlock ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 10px 0px 10px 0px ;
+}
+
+.LeftNavBlock li .Section {
+   padding: 8px 10px;
+   font-size: 1.2em;
+   color: #444;
+}
+
+.LeftNavBlock li .Child {
+   padding: 8px 10px 8px 30px;
+   color: #777;
+
+}
+
+.LeftNavBlock li .MenuItem {
+   display: block;
+   text-decoration: none;
+}
+
+.LeftNavBlock li .MenuItem:hover {
+   color: #14B2E2;
+
+}
+
+.LeftNavBlock li .MenuItem:active {
+   color: black;
+}
+
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+
+.gdc-kpi {
+  padding: 30px;
+  margin: 40px;
+  background-color: #ccc;
+  font-weight: bold;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
