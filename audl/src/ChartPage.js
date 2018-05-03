@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { AfmComponents } from '@gooddata/react-components';
 import Playground from './components/Playground';
 
+import {
+  PROJECT_ID,
+  M_NUM_OF_ACTIVITIES,
+  M_NUM_OF_OPPORTUNITIES,
+  M_NUM_OF_WON_OPPS,
+} from './constants';
+
 const {
   BarChart,
   LineChart,
@@ -10,32 +17,45 @@ const {
 
 class ChartPage extends Component {
   render() {
-    const ATTR_REGION = 'label.owner.region';
-    const ATTR_EL_REGION_EAST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1225';
-    const ATTR_EL_REGION_WEST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1237';
+    const COLORS = [
+      'rgba(195, 49, 73, 1)',
+      'rgba(168, 194, 86, 1)',
+      'rgba(243, 217, 177, 1)',
+      'rgba(194, 153, 121, 1)',
+      'rgba(162, 37, 34, 1)',
+    ];
 
-    const ATTR_DEPARTMENT = 'label.owner.department';
-    const ATTR_EL_DEPARTMENT_DIRECT = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1226';
-    const ATTR_EL_DEPARTMENT_INSIDE = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1234';
+    const NUMBER_OF_ACTIVITIES = M_NUM_OF_ACTIVITIES;
+    const NUMBER_OF_OPPORTUNITIES = M_NUM_OF_OPPORTUNITIES;
+    const NUMBER_OF_WON_OPPS = M_NUM_OF_WON_OPPS;
 
     const scope = {
       BarChart,
       LineChart,
       ColumnChart,
-      ATTR_REGION,
-      ATTR_EL_REGION_EAST,
-      ATTR_EL_REGION_WEST,
-      ATTR_DEPARTMENT,
-      ATTR_EL_DEPARTMENT_DIRECT,
-      ATTR_EL_DEPARTMENT_INSIDE,
+      NUMBER_OF_ACTIVITIES,
+      NUMBER_OF_OPPORTUNITIES,
+      NUMBER_OF_WON_OPPS,
+      COLORS,
     };
 
     const scopeDesc = `
 // Following are the available components in scope for this playground:
 
-<BarChart />
-<LineChart />
-<ColumnChart />`;
+import { AfmComponents } from '@gooddata/react-components';
+const { BarChart, LineChart, ColumnChart } = AfmComponents;
+
+const NUMBER_OF_ACTIVITIES = '${M_NUM_OF_ACTIVITIES}';
+const NUMBER_OF_OPPORTUNITIES = '${M_NUM_OF_OPPORTUNITIES}';
+const NUMBER_OF_WON_OPPS = '${M_NUM_OF_WON_OPPS}';
+
+const COLORS = [
+  'rgba(195, 49, 73, 1)',
+  'rgba(168, 194, 86, 1)',
+  'rgba(243, 217, 177, 1)',
+  'rgba(194, 153, 121, 1)',
+  'rgba(162, 37, 34, 1)'
+];`;
 
     return (
       <div className="mainscreen">
@@ -44,23 +64,27 @@ class ChartPage extends Component {
           scope={scope}
           scopeDesc={scopeDesc}
           code={`render(
-  <BarChart
-    projectId="fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk"
+  <ColumnChart
+    projectId="${PROJECT_ID}"
+    config={{ colors: COLORS }}
     afm={{
       measures: [{
         localIdentifier: 'm1',
         definition: {
           measure: {
             item: {
-              uri: '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/14636'
+              identifier: NUMBER_OF_ACTIVITIES
             }
           }
         }
-      }],
-      attributes: [{
-        localIdentifier: 'a1',
-        displayForm: {
-          uri: '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1252'
+      }, {
+        localIdentifier: 'm2',
+        definition: {
+          measure: {
+            item: {
+              identifier: NUMBER_OF_OPPORTUNITIES
+            }
+          }
         }
       }]
     }}

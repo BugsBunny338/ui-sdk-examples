@@ -7,13 +7,13 @@
       "changeOrigin": true,
       "secure": false,
       "cookieDomainRewrite": "localhost",
-      "target": "https://staging3.intgdc.com/"
+      "target": "https://secure.gooddata.com/"
     },
     "/*.html": {
       "changeOrigin": true,
       "secure": false,
       "cookieDomainRewrite": "localhost",
-      "target": "https://staging3.intgdc.com/"
+      "target": "https://secure.gooddata.com/"
     }
   },
   "dependencies": {

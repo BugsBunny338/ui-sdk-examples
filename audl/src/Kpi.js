@@ -2,37 +2,45 @@ import React, { Component } from 'react';
 import { Kpi } from '@gooddata/react-components';
 import Playground from './components/Playground';
 
+import {
+  PROJECT_ID,
+  M_NUM_OF_ACTIVITIES,
+  A_ACTIVITY_TYPE,
+  A_EL_ACTIVITY_TYPE_EMAIL,
+  A_EL_ACTIVITY_TYPE_IN_PERSON_MEETING,
+  A_EL_ACTIVITY_TYPE_PHONE_CALL,
+  A_EL_ACTIVITY_TYPE_WEB_MEETING,
+} from './constants';
+
 
 class KpiPage extends Component {
   render() {
-    const ATTR_REGION = 'label.owner.region';
-    const ATTR_EL_REGION_EAST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1225';
-    const ATTR_EL_REGION_WEST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1237';
-
-    const ATTR_DEPARTMENT = 'label.owner.department';
-    const ATTR_EL_DEPARTMENT_DIRECT = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1226';
-    const ATTR_EL_DEPARTMENT_INSIDE = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1234';
+    const NUMBER_OF_ACTIVITIES = M_NUM_OF_ACTIVITIES;
+    const ACTIVITY_TYPE = A_ACTIVITY_TYPE;
+    const ACTIVITY_TYPE_EMAIL = A_EL_ACTIVITY_TYPE_EMAIL;
+    const ACTIVITY_TYPE_IN_PERSON_MEETING = A_EL_ACTIVITY_TYPE_IN_PERSON_MEETING;
+    const ACTIVITY_TYPE_PHONECALL = A_EL_ACTIVITY_TYPE_PHONE_CALL;
+    const ACTIVITY_TYPE_WEB_MEETING = A_EL_ACTIVITY_TYPE_WEB_MEETING;
 
     const scope = {
       Kpi,
-      ATTR_REGION,
-      ATTR_EL_REGION_EAST,
-      ATTR_EL_REGION_WEST,
-      ATTR_DEPARTMENT,
-      ATTR_EL_DEPARTMENT_DIRECT,
-      ATTR_EL_DEPARTMENT_INSIDE,
+      NUMBER_OF_ACTIVITIES,
+      ACTIVITY_TYPE,
+      ACTIVITY_TYPE_EMAIL,
+      ACTIVITY_TYPE_IN_PERSON_MEETING,
+      ACTIVITY_TYPE_PHONECALL,
+      ACTIVITY_TYPE_WEB_MEETING,
     };
 
     const scopeDesc = `
-// Following are the constants in scope for this playground:
+// Following are the constants in scope for this play ground:
 
-const ATTR_REGION = 'label.owner.region';
-const ATTR_EL_REGION_EAST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1225';
-const ATTR_EL_REGION_WEST = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1023/elements?id=1237';
-
-const ATTR_DEPARTMENT = 'label.owner.department';
-const ATTR_EL_DEPARTMENT_DIRECT = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1226';
-const ATTR_EL_DEPARTMENT_INSIDE = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/1026/elements?id=1234';`;
+const NUMBER_OF_ACTIVITIES            = '${M_NUM_OF_ACTIVITIES}';
+const ACTIVITY_TYPE                   = '${A_ACTIVITY_TYPE}';
+const ACTIVITY_TYPE_EMAIL             = '${A_EL_ACTIVITY_TYPE_EMAIL}';
+const ACTIVITY_TYPE_IN_PERSON_MEETING = '${A_EL_ACTIVITY_TYPE_IN_PERSON_MEETING}';
+const ACTIVITY_TYPE_PHONECALL         = '${A_EL_ACTIVITY_TYPE_PHONE_CALL}';
+const ACTIVITY_TYPE_WEB_MEETING       = '${A_EL_ACTIVITY_TYPE_WEB_MEETING}';`;
 
     return (
       <div className="mainscreen">
@@ -42,15 +50,15 @@ const ATTR_EL_DEPARTMENT_INSIDE = '/gdc/md/fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk/obj/
           scopeDesc={scopeDesc}
           code={`render(
   <Kpi
-    projectId="fqz4w13o7eyv8ndy1c1cnlyvb9srq2dk"
-    measure="abf0d42yaIkL"
-    format="$#,##0"
+    projectId="${PROJECT_ID}"
+    measure={NUMBER_OF_ACTIVITIES}
+    format="#,##0"
     filters={[{
       positiveAttributeFilter: {
         displayForm: {
-          identifier: ATTR_DEPARTMENT
+          identifier: ACTIVITY_TYPE
         },
-        in: [ATTR_EL_DEPARTMENT_DIRECT]
+        in: [ACTIVITY_TYPE_EMAIL, ACTIVITY_TYPE_PHONECALL]
       }
     }]}
     LoadingComponent={() => <span>Loading…</span>}
