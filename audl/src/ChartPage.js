@@ -7,7 +7,7 @@ import {
   M_NUM_OF_ACTIVITIES,
   M_NUM_OF_OPPORTUNITIES,
   M_NUM_OF_WON_OPPS,
-} from './constants';
+} from './constants/catalog';
 
 const {
   BarChart,

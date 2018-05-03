@@ -10,7 +10,7 @@ import {
   A_EL_ACTIVITY_TYPE_IN_PERSON_MEETING,
   A_EL_ACTIVITY_TYPE_PHONE_CALL,
   A_EL_ACTIVITY_TYPE_WEB_MEETING,
-} from './constants';
+} from './constants/catalog';
 
 
 class KpiPage extends Component {
