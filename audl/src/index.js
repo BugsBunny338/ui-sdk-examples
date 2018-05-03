@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { Route } from 'react-router';
 import { HashRouter as Router } from 'react-router-dom';
 import gooddata from '@gooddata/gooddata-js';
+import '@gooddata/react-components/styles/css/main.css';
 
 import App from './App';
 import configureStore from './configureStore';
