@@ -1,98 +1,61 @@
 import React, { Component } from 'react';
-import { Kpi, ColumnChart, AfmColumnChart } from './components/afmConnected';
-import C from './catalog';
+import { Visualization, Table } from '@gooddata/react-components';
 import config from './config';
-import { FG_MAIN } from './constants';
-import AttributeDropdown from './components/AttributeDropdown';
 
 import '@gooddata/react-components/styles/css/main.css';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      filters: []
+    };
+
+    this.setFilters = this.setFilters.bind(this);
+  }
+
+  setFilters() {
+    this.setState({
+      filters: [{
+        positiveAttributeFilter: {
+          displayForm: {
+            uri: '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2209'
+          },
+          in: ['/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2208/elements?id=6340103']
+        }
+      }]
+    });
+  }
+
   render() {
+    const { filters } = this.state;
+
+    console.log(filters);
+
     return (
       <div className="App">
-        <div style={{ width: 400, margin: 'auto', marginBottom: 20, marginTop: 20 }}>
-          <AttributeDropdown
+        <button onClick={this.setFilters}>set filters</button>
+        <div style={{ height: 400 }}>
+          <Visualization
             {...config}
-            filterGroup={FG_MAIN}
-            attribute={C.attributeDisplayForm('Location City')}
-            placeholder="Filter cities"
+            identifier="act2Khypdnz6"
+            filters={filters}
           />
         </div>
-        <Kpi
-          {...config}
-          filterGroup={FG_MAIN}
-          measure={C.measure('# Checks')}
-        />
         <div style={{ height: 400 }}>
-          <ColumnChart
+          <Table
             {...config}
-            filterGroup={FG_MAIN}
-            measures={[{
-              measure: {
-                localIdentifier: 'm-checks',
-                definition: {
-                  measureDefinition: {
-                    item: {
-                      identifier: C.measure('# Checks')
-                    }
-                  }
-                }
+            attributes={[{
+              visualizationAttribute: {
+                displayForm: {
+                  uri: '/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2209'
+                },
+                localIdentifier: 'a1'
               }
             }]}
-            viewBy={{
-              visualizationAttribute: {
-                localIdentifier: 'a-city',
-                displayForm: {
-                  identifier: C.attributeDisplayForm('Location City')
-                }
-              }
-            }}
-            stackBy={{
-              visualizationAttribute: {
-                localIdentifier: 'a-name',
-                displayForm: {
-                  identifier: C.attributeDisplayForm('Location Name')
-                }
-              }
-            }}
-          />
-        </div>
-        <div style={{ height: 400 }}>
-          <AfmColumnChart
-            {...config}
-            filterGroup={FG_MAIN}
-            afm={{
-              measures: [{
-                localIdentifier: 'm-checks',
-                definition: {
-                  measure: {
-                    item: {
-                      identifier: C.measure('# Checks')
-                    }
-                  }
-                }
-              }],
-              attributes: [{
-                localIdentifier: 'a-city',
-                displayForm: {
-                  identifier: C.attributeDisplayForm('Location City')
-                }
-              }, {
-                localIdentifier: 'a-name',
-                displayForm: {
-                  identifier: C.attributeDisplayForm('Location Name')
-                }
-              }]
-            }}
-            resultSpec={{
-              dimensions: [{
-                itemIdentifiers: ['a-name']
-              }, {
-                itemIdentifiers: ['a-city', 'measureGroup']
-              }]
-            }}
+            filters={filters}
           />
         </div>
       </div>
