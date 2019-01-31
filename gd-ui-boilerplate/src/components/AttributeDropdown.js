@@ -44,6 +44,10 @@ class AttributeDropdown extends Component {
       placeholder
     } = this.props;
 
+    sdk.md.getObjectUri(projectId, attribute).then((result) => {
+      sdk.md.getValidElements(projectId, result.split('/').pop(), { limit: 100 }).then(console.log);
+    });
+
     return (
       <AttributeElements
         sdk={sdk}
