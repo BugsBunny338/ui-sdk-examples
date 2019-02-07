@@ -76,65 +76,22 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div style={{ width: 400, margin: 'auto', marginBottom: 20, marginTop: 20 }}>
-          <AttributeDropdown
-            {...config}
-            filterGroup={FG_MAIN}
-            attribute={C.attributeDisplayForm('Location City')}
-            placeholder="Filter cities"
-            onChange={this.handleOutcomingCityFilterChange}
-          />
-        </div>
-        <div>
-          # of Location City: <Kpi
-            {...config}
-            filterGroup={FG_MAIN}
-            measure={C.measure('# Location City')}
-          />
-          <br />
-          <br />
-        </div>
-        <div style={{ height: 400 }}>
-          <Visualization
-            {...config}
-            filterGroup={FG_MAIN}
-            identifier="aby6oS6DbpFX"
-          />
-        </div>
-        <div style={{ height: 400 }}>
-          <ColumnChart
-            {...config}
-            filterGroup={FG_MAIN}
-            measures={[Model.measure(C.measure('# Checks'))]}
-            viewBy={Model.attribute(C.attributeDisplayForm('Location City'))}
-            stackBy={Model.attribute(C.attributeDisplayForm('Location Name'))}
-          />
-        </div>
-        <div style={{ height: 400 }}>
-          <Execute
-            {...config}
-            filterGroup={FG_MAIN}
-            afm={{
-              measures: [{
-                localIdentifier: 'm1',
-                definition: {
-                  measure: {
-                    item: {
-                      identifier: C.measure('# Checks')
-                    }
-                  }
-                }
-              }],
-              attributes: [{
-                localIdentifier: 'a1',
-                displayForm: {
-                  identifier: C.attributeDisplayForm('Location City')
-                }
-              }]
-            }}
-            children={CustomBarChart}
-          />
-        </div>
+        <button
+          onClick={() => {
+            const postMessageStructure = {
+              gdc: {
+                setFilterContext: [{
+                  label: 'date.date.mmddyyyy',
+                  type: 'date',
+                  from: '2017-01-01',
+                  to: '2017-12-31'
+                }]
+              }
+            };
+
+            window.parent.postMessage(JSON.stringify(postMessageStructure), '*');
+          }}
+        >Set date filter to Jan 1 2017 - Dec 31 2017</button>
       </div>
     );
   }
