@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@gooddata/gdc-afm-connect": "1.0.22",
-    "@gooddata/react-components": "^6.2.0",
+    "@gooddata/react-components": "6.2.0",
     "node-sass": "^4.9.4",
     "react": "16.8",
     "react-dom": "16.8",
@@ -19,8 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildgd": "PUBLIC_URL=/gd-ui-boilerplate yarn build",
-    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/gd-ui-boilerplate/"
+    "buildgd": "PUBLIC_URL=/gd-ui-boilerplate-flexera yarn build",
+    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-poc/gd-ui-boilerplate-flexera/"
   },
   "eslintConfig": {
     "extends": "react-app"

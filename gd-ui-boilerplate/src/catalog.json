@@ -1,2167 +1,851 @@
 {
-  "projectId": "xms7ga4tf3g3nzucd8380o2bev8oeknp",
+  "projectId": "zuyu5r42fr85ekgo982t8px41we1baef",
   "measures": {
-    "_Filter Last 4 Quarter": {
-      "identifier": "aaIHiWZjfWNA",
-      "tags": "hidden",
-      "title": "_Filter Last 4 Quarter"
-    },
-    "_Filter Quarter": {
-      "identifier": "aaiF4bffe4yn",
-      "tags": "hidden",
-      "title": "_Filter Quarter"
-    },
-    "_TIMELINE Q": {
-      "identifier": "aaJF1ktqc10F",
-      "tags": "hidden",
-      "title": "_TIMELINE Q"
-    },
-    "[AVG] Same Store Sales Growth MoM": {
-      "identifier": "aasApLbucFp0",
+    "# Records": {
+      "identifier": "ab35AivIbivU",
       "tags": "",
-      "title": "[AVG] Same Store Sales Growth MoM"
+      "title": "# Records"
     },
-    "# Checks": {
-      "identifier": "aeOt50ngicOD",
+    "$ Ab Cost": {
+      "identifier": "aaU4fbCPdDSE",
       "tags": "",
-      "title": "# Checks"
+      "title": "$ Ab Cost"
     },
-    "# Employees": {
-      "identifier": "aaTJSTfSaRBg",
+    "$ Nb Cost": {
+      "identifier": "aaA4gm65bSmr",
       "tags": "",
-      "title": "# Employees"
+      "title": "$ Nb Cost"
     },
-    "# Franchise Locations": {
-      "identifier": "ackJFayteCFG",
+    "$ Usage Amount": {
+      "identifier": "abB4cwdOgvOZ",
       "tags": "",
-      "title": "# Franchise Locations"
+      "title": "$ Usage Amount"
     },
-    "# Items on Check": {
-      "identifier": "adFurWGrd2H8",
+    "Ab Cost": {
+      "identifier": "fact.billing.abcost",
       "tags": "",
-      "title": "# Items on Check"
+      "title": "Ab Cost"
     },
-    "# Location City": {
-      "identifier": "aafmUcxXd17M",
+    "Adj Ab Cost": {
+      "identifier": "fact.billing.adjabcost",
       "tags": "",
-      "title": "# Location City"
+      "title": "Adj Ab Cost"
     },
-    "# Owned Locations": {
-      "identifier": "aaBJGIyWbxfO",
+    "Adj Au Cost": {
+      "identifier": "fact.billing.adjaucost",
       "tags": "",
-      "title": "# Owned Locations"
+      "title": "Adj Au Cost"
     },
-    "# Restaurants": {
-      "identifier": "aawAq8YqhM3o",
+    "Adj Nb Cost": {
+      "identifier": "fact.billing.adjnbcost",
       "tags": "",
-      "title": "# Restaurants"
+      "title": "Adj Nb Cost"
     },
-    "% Change $ Avg Total Sales": {
-      "identifier": "afxBqOrPc5Zh",
+    "Adj Nu Cost": {
+      "identifier": "fact.billing.adjnucost",
       "tags": "",
-      "title": "% Change $ Avg Total Sales"
+      "title": "Adj Nu Cost"
     },
-    "% Change $ Avg Total Sales by Server": {
-      "identifier": "acMCYQZbbwJg",
+    "Au Cost": {
+      "identifier": "fact.billing.aucost",
       "tags": "",
-      "title": "% Change $ Avg Total Sales by Server"
+      "title": "Au Cost"
     },
-    "% of Entree on Total Check Size": {
-      "identifier": "aagurTlZd1Ul",
+    "Nb Cost": {
+      "identifier": "fact.billing.nbcost",
       "tags": "",
-      "title": "% of Entree on Total Check Size"
+      "title": "Nb Cost"
     },
-    "$ Avg Check Size": {
-      "identifier": "agGujhRmcjQD",
+    "Nu Cost": {
+      "identifier": "fact.billing.nucost",
       "tags": "",
-      "title": "$ Avg Check Size"
+      "title": "Nu Cost"
     },
-    "$ Avg Daily Total Sales": {
-      "identifier": "aagJGHg1bxap",
+    "Usage Amount": {
+      "identifier": "fact.billing.usageamount",
       "tags": "",
-      "title": "$ Avg Daily Total Sales"
-    },
-    "$ Avg Daily Total Sales by Server": {
-      "identifier": "aaAwXH5UfVBx",
-      "tags": "",
-      "title": "$ Avg Daily Total Sales by Server"
-    },
-    "$ Avg Daily Total Sales by Server - For Previous": {
-      "identifier": "aeiCXq43bzcl",
-      "tags": "",
-      "title": "$ Avg Daily Total Sales by Server - For Previous"
-    },
-    "$ Avg Restaurant Daily Total Sales": {
-      "identifier": "acEvQdUMiEAd",
-      "tags": "",
-      "title": "$ Avg Restaurant Daily Total Sales"
-    },
-    "$ Avg Restaurant Daily Total Sales - For Previous": {
-      "identifier": "agbBoXF6haIe",
-      "tags": "",
-      "title": "$ Avg Restaurant Daily Total Sales - For Previous"
-    },
-    "$ Avg Total Sales by Restaurant": {
-      "identifier": "aaAHkMhRgp7S",
-      "tags": "",
-      "title": "$ Avg Total Sales by Restaurant"
-    },
-    "$ Entree of Total Check Size": {
-      "identifier": "aavuqQNNaDdc",
-      "tags": "",
-      "title": "$ Entree of Total Check Size"
-    },
-    "$ Franchise Fees": {
-      "identifier": "aaEGaXAEgB7U",
-      "tags": "franchise_fees",
-      "title": "$ Franchise Fees"
-    },
-    "$ Franchise Fees (Ad Royalty)": {
-      "identifier": "aabHeqImaK0d",
-      "tags": "franchise_fees",
-      "title": "$ Franchise Fees (Ad Royalty)"
-    },
-    "$ Franchise Fees (Initial Fee) Last Quarter Timeline": {
-      "identifier": "aayHf60BfkfS",
-      "tags": "",
-      "title": "$ Franchise Fees (Initial Fee) Last Quarter Timeline"
-    },
-    "$ Franchise Fees (Initial Franchise Fee)": {
-      "identifier": "aaDHcv6wevkl",
-      "tags": "franchise_fees",
-      "title": "$ Franchise Fees (Initial Franchise Fee)"
-    },
-    "$ Franchise Fees (Ongoing Royalty)": {
-      "identifier": "aaWGcgnsfxIg",
-      "tags": "franchise_fees",
-      "title": "$ Franchise Fees (Ongoing Royalty)"
-    },
-    "$ Franchise Fees (Ongoing Royalty) Last Quarter Timeline": {
-      "identifier": "aaeHf3Mofjir",
-      "tags": "",
-      "title": "$ Franchise Fees (Ongoing Royalty) Last Quarter Timeline"
-    },
-    "$ Franchised Sales": {
-      "identifier": "aclF4oDIe5hP",
-      "tags": "",
-      "title": "$ Franchised Sales"
-    },
-    "$ Gross Profit": {
-      "identifier": "aa5JBkFDa7sJ",
-      "tags": "",
-      "title": "$ Gross Profit"
-    },
-    "$ Menu Item Sales": {
-      "identifier": "fact.salesdetailfact.menuitemsales",
-      "tags": "",
-      "title": "$ Menu Item Sales"
-    },
-    "$ Owned Sales": {
-      "identifier": "aaMF7AZGbALB",
-      "tags": "",
-      "title": "$ Owned Sales"
-    },
-    "$ Owned Sales Last Quarter Timeline": {
-      "identifier": "abHF4LCfdNdt",
-      "tags": "",
-      "title": "$ Owned Sales Last Quarter Timeline"
-    },
-    "$ Scheduled Costs": {
-      "identifier": "aclJxvAlhCp0",
-      "tags": "",
-      "title": "$ Scheduled Costs"
-    },
-    "$ Scheduled Labor Costs": {
-      "identifier": "aaGJzwrDdbfQ",
-      "tags": "",
-      "title": "$ Scheduled Labor Costs"
-    },
-    "$ Total Check Value": {
-      "identifier": "aattxAMVg2YU",
-      "tags": "",
-      "title": "$ Total Check Value"
-    },
-    "$ Total Costs": {
-      "identifier": "aaQHncjzfrtR",
-      "tags": "show",
-      "title": "$ Total Costs"
-    },
-    "$ Total Costs - COGs": {
-      "identifier": "aafHpxx0f3gL",
-      "tags": "",
-      "title": "$ Total Costs - COGs"
-    },
-    "$ Total Costs - Labor": {
-      "identifier": "aamHpELXdotY",
-      "tags": "",
-      "title": "$ Total Costs - Labor"
-    },
-    "$ Total Costs - Occupany": {
-      "identifier": "aagHqrJ6iAhD",
-      "tags": "",
-      "title": "$ Total Costs - Occupany"
-    },
-    "$ Total Costs - Operating": {
-      "identifier": "aaeHqv2qhEE1",
-      "tags": "",
-      "title": "$ Total Costs - Operating"
-    },
-    "$ Total Sales": {
-      "identifier": "aa7ulGyKhIE5",
-      "tags": "",
-      "title": "$ Total Sales"
-    },
-    "$ Total Sales Last Quarter Timeline": {
-      "identifier": "aajFRfDPaJrB",
-      "tags": "",
-      "title": "$ Total Sales Last Quarter Timeline"
-    },
-    "Avg # Checks": {
-      "identifier": "aakujkP2g68f",
-      "tags": "",
-      "title": "Avg # Checks"
-    },
-    "Avg # Employees - Franchised": {
-      "identifier": "aciJJMmDfGYG",
-      "tags": "",
-      "title": "Avg # Employees - Franchised"
-    },
-    "Avg # Employees - Owned": {
-      "identifier": "abQJKPrmcvPv",
-      "tags": "",
-      "title": "Avg # Employees - Owned"
-    },
-    "Avg # Items on Check": {
-      "identifier": "adFurSoPaUaF",
-      "tags": "",
-      "title": "Avg # Items on Check"
-    },
-    "Avg # Items on Check By Server": {
-      "identifier": "aaKwQwBIg1WY",
-      "tags": "",
-      "title": "Avg # Items on Check By Server"
-    },
-    "Avg % of Entree on Total Check size": {
-      "identifier": "adQvRqlFawrq",
-      "tags": "",
-      "title": "Avg % of Entree on Total Check size"
-    },
-    "Avg Check Size by Restaurant": {
-      "identifier": "abmxly1WgN0A",
-      "tags": "",
-      "title": "Avg Check Size by Restaurant"
-    },
-    "Avg Check Size by Server": {
-      "identifier": "afewRzGAersh",
-      "tags": "",
-      "title": "Avg Check Size by Server"
-    },
-    "Avg Daily # Checks by Restaurant": {
-      "identifier": "aaKvTDSga0Qc",
-      "tags": "",
-      "title": "Avg Daily # Checks by Restaurant"
-    },
-    "Avg Daily # of Check by Server": {
-      "identifier": "afgwRbw8ekwA",
-      "tags": "",
-      "title": "Avg Daily # of Check by Server"
-    },
-    "Avg Entree % By Restaurant": {
-      "identifier": "afQHUg8AfYdl",
-      "tags": "",
-      "title": "Avg Entree % By Restaurant"
-    },
-    "Avg Entree % By Server": {
-      "identifier": "aexwEtn0eHwB",
-      "tags": "",
-      "title": "Avg Entree % By Server"
-    },
-    "Cost": {
-      "identifier": "fact.restaurantcostsfact.cost",
-      "tags": "",
-      "title": "Cost"
-    },
-    "Franchise Fee (Initial Fee) % Change": {
-      "identifier": "aabHgIqabggQ",
-      "tags": "",
-      "title": "Franchise Fee (Initial Fee) % Change"
-    },
-    "Franchise Fee (Ongoing Royalty) % Change": {
-      "identifier": "aacHgvmIfZOX",
-      "tags": "",
-      "title": "Franchise Fee (Ongoing Royalty) % Change"
-    },
-    "Gross Profit %": {
-      "identifier": "abBJBoqTe5IH",
-      "tags": "",
-      "title": "Gross Profit %"
-    },
-    "Menu Item Quantity": {
-      "identifier": "fact.salesdetailfact.menuitemquantity",
-      "tags": "",
-      "title": "Menu Item Quantity"
-    },
-    "Owned Sales % Change": {
-      "identifier": "aacF8F2Me67e",
-      "tags": "",
-      "title": "Owned Sales % Change"
-    },
-    "Same Store Sales": {
-      "identifier": "aaXAnw7hcbFY",
-      "tags": "",
-      "title": "Same Store Sales"
-    },
-    "Same Store Sales MoM Growth": {
-      "identifier": "aciAmeQCfGmo",
-      "tags": "",
-      "title": "Same Store Sales MoM Growth"
-    },
-    "Same Store Sales Previous Month": {
-      "identifier": "aagAoGqjcuCZ",
-      "tags": "",
-      "title": "Same Store Sales Previous Month"
-    },
-    "Scheduled Cost": {
-      "identifier": "fact.restaurantcostsfact.scheduledcost",
-      "tags": "",
-      "title": "Scheduled Cost"
-    },
-    "Total # Franchised Employees": {
-      "identifier": "afrJGKajgogi",
-      "tags": "",
-      "title": "Total # Franchised Employees"
-    },
-    "Total # Owned Employees": {
-      "identifier": "aazJLFHCdCBh",
-      "tags": "",
-      "title": "Total # Owned Employees"
-    },
-    "Total Sales % Change": {
-      "identifier": "abhFQRhibZKx",
-      "tags": "",
-      "title": "Total Sales % Change"
+      "title": "Usage Amount"
     }
   },
   "attributes": {
-    "Cost Type": {
-      "identifier": "attr.restaurantcostsfact.costtype",
+    "BC Path": {
+      "identifier": "attr.billing.bcpath",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantcostsfact.costtype",
+        "identifier": "label.billing.bcpath",
         "tags": "",
-        "title": "Cost Type"
+        "title": "BC Path"
       },
       "displayForms": {
-        "Cost Type": {
-          "dfIdentifier": "label.restaurantcostsfact.costtype",
-          "identifier": "label.restaurantcostsfact.costtype",
+        "BC Path": {
+          "dfIdentifier": "label.billing.bcpath",
+          "identifier": "label.billing.bcpath",
           "tags": "",
           "dfTags": "",
-          "title": "Cost Type"
+          "title": "BC Path"
         }
       },
-      "title": "Cost Type"
+      "title": "BC Path"
     },
-    "Employee Id": {
-      "identifier": "attr.employee.employeeid",
+    "BC Path 1": {
+      "identifier": "attr.billing.bcpath1",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.employee.employeeid",
+        "identifier": "label.billing.bcpath1",
         "tags": "",
-        "title": "Employee Id"
+        "title": "BC Path 1"
       },
       "displayForms": {
-        "Employee Id": {
-          "dfIdentifier": "label.employee.employeeid",
-          "identifier": "label.employee.employeeid",
+        "BC Path 1": {
+          "dfIdentifier": "label.billing.bcpath1",
+          "identifier": "label.billing.bcpath1",
           "tags": "",
           "dfTags": "",
-          "title": "Employee Id"
+          "title": "BC Path 1"
         }
       },
-      "title": "Employee Id"
+      "title": "BC Path 1"
     },
-    "Employee Name": {
-      "identifier": "attr.employee.employeename",
+    "BC Path 2": {
+      "identifier": "attr.billing.bcpath2",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.employee.employeename",
+        "identifier": "label.billing.bcpath2",
         "tags": "",
-        "title": "Employee Name"
+        "title": "BC Path 2"
       },
       "displayForms": {
-        "Employee Name": {
-          "dfIdentifier": "label.employee.employeename",
-          "identifier": "label.employee.employeename",
+        "BC Path 2": {
+          "dfIdentifier": "label.billing.bcpath2",
+          "identifier": "label.billing.bcpath2",
           "tags": "",
           "dfTags": "",
-          "title": "Employee Name"
-        },
-        "Employee URL": {
-          "dfIdentifier": "label.employee.employeename.employeeurl",
-          "identifier": "label.employee.employeename.employeeurl",
-          "tags": "",
-          "dfTags": "",
-          "title": "Employee URL"
+          "title": "BC Path 2"
         }
       },
-      "title": "Employee Name"
+      "title": "BC Path 2"
     },
-    "Is Kids Item?": {
-      "identifier": "attr.menuitem.iskidsitem",
+    "BC Path 3": {
+      "identifier": "attr.billing.bcpath3",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.menuitem.iskidsitem",
+        "identifier": "label.billing.bcpath3",
         "tags": "",
-        "title": "Is Kids Item?"
+        "title": "BC Path 3"
       },
       "displayForms": {
-        "Is Kids Item?": {
-          "dfIdentifier": "label.menuitem.iskidsitem",
-          "identifier": "label.menuitem.iskidsitem",
+        "BC Path 3": {
+          "dfIdentifier": "label.billing.bcpath3",
+          "identifier": "label.billing.bcpath3",
           "tags": "",
           "dfTags": "",
-          "title": "Is Kids Item?"
+          "title": "BC Path 3"
         }
       },
-      "title": "Is Kids Item?"
+      "title": "BC Path 3"
     },
-    "Line Item Id": {
-      "identifier": "attr.salesdetailfact.lineitemid",
+    "BC Path 4": {
+      "identifier": "attr.billing.bcpath4",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.salesdetailfact.lineitemid",
+        "identifier": "label.billing.bcpath4",
         "tags": "",
-        "title": "Line Item Id"
+        "title": "BC Path 4"
       },
       "displayForms": {
-        "Line Item Id": {
-          "dfIdentifier": "label.salesdetailfact.lineitemid",
-          "identifier": "label.salesdetailfact.lineitemid",
+        "BC Path 4": {
+          "dfIdentifier": "label.billing.bcpath4",
+          "identifier": "label.billing.bcpath4",
           "tags": "",
           "dfTags": "",
-          "title": "Line Item Id"
+          "title": "BC Path 4"
         }
       },
-      "title": "Line Item Id"
+      "title": "BC Path 4"
     },
-    "Location City": {
-      "identifier": "attr.restaurantlocation.locationcity",
+    "Category": {
+      "identifier": "attr.billing.category",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationcity",
+        "identifier": "label.billing.category",
         "tags": "",
-        "title": "Location City"
+        "title": "Category"
       },
       "displayForms": {
-        "Location City": {
-          "dfIdentifier": "label.restaurantlocation.locationcity",
-          "identifier": "label.restaurantlocation.locationcity",
+        "Category": {
+          "dfIdentifier": "label.billing.category",
+          "identifier": "label.billing.category",
           "tags": "",
           "dfTags": "",
-          "title": "Location City"
+          "title": "Category"
         }
       },
-      "title": "Location City"
+      "title": "Category"
     },
-    "Location Country": {
-      "identifier": "attr.restaurantlocation.locationcountry",
+    "Instance Type": {
+      "identifier": "attr.billing.instancetype",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationcountry",
+        "identifier": "label.billing.instancetype",
         "tags": "",
-        "title": "Location Country"
+        "title": "Instance Type"
       },
       "displayForms": {
-        "Location Country": {
-          "dfIdentifier": "label.restaurantlocation.locationcountry",
-          "identifier": "label.restaurantlocation.locationcountry",
+        "Instance Type": {
+          "dfIdentifier": "label.billing.instancetype",
+          "identifier": "label.billing.instancetype",
           "tags": "",
           "dfTags": "",
-          "title": "Location Country"
+          "title": "Instance Type"
         }
       },
-      "title": "Location Country"
+      "title": "Instance Type"
     },
-    "Location Id": {
-      "identifier": "attr.restaurantlocation.locationid",
+    "Region": {
+      "identifier": "attr.billing.region",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationid",
+        "identifier": "label.billing.region",
         "tags": "",
-        "title": "Location Id"
+        "title": "Region"
       },
       "displayForms": {
-        "Location Id": {
-          "dfIdentifier": "label.restaurantlocation.locationid",
-          "identifier": "label.restaurantlocation.locationid",
+        "Region": {
+          "dfIdentifier": "label.billing.region",
+          "identifier": "label.billing.region",
           "tags": "",
           "dfTags": "",
-          "title": "Location Id"
+          "title": "Region"
         }
       },
-      "title": "Location Id"
+      "title": "Region"
     },
-    "Location Name": {
-      "identifier": "attr.restaurantlocation.locationname",
+    "Resource ID": {
+      "identifier": "attr.billing.resourceid",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationname",
+        "identifier": "label.billing.resourceid",
         "tags": "",
-        "title": "Location Name"
+        "title": "Resource ID"
       },
       "displayForms": {
-        "Location Name": {
-          "dfIdentifier": "label.restaurantlocation.locationname",
-          "identifier": "label.restaurantlocation.locationname",
+        "Resource ID": {
+          "dfIdentifier": "label.billing.resourceid",
+          "identifier": "label.billing.resourceid",
           "tags": "",
           "dfTags": "",
-          "title": "Location Name"
-        },
-        "Location URL": {
-          "dfIdentifier": "label.restaurantlocation.locationname.locationurl",
-          "identifier": "label.restaurantlocation.locationname.locationurl",
-          "tags": "",
-          "dfTags": "",
-          "title": "Location URL"
+          "title": "Resource ID"
         }
       },
-      "title": "Location Name"
+      "title": "Resource ID"
     },
-    "Location Ownership": {
-      "identifier": "attr.restaurantlocation.locationownership",
+    "Resource Type": {
+      "identifier": "attr.billing.resourcetype",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationownership",
+        "identifier": "label.billing.resourcetype",
         "tags": "",
-        "title": "Location Ownership"
+        "title": "Resource Type"
       },
       "displayForms": {
-        "Location Ownership": {
-          "dfIdentifier": "label.restaurantlocation.locationownership",
-          "identifier": "label.restaurantlocation.locationownership",
+        "Resource Type": {
+          "dfIdentifier": "label.billing.resourcetype",
+          "identifier": "label.billing.resourcetype",
           "tags": "",
           "dfTags": "",
-          "title": "Location Ownership"
+          "title": "Resource Type"
         }
       },
-      "title": "Location Ownership"
+      "title": "Resource Type"
     },
-    "Location Resort": {
-      "identifier": "attr.restaurantlocation.locationresort",
+    "Service": {
+      "identifier": "attr.billing.service",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationresort",
+        "identifier": "label.billing.service",
         "tags": "",
-        "title": "Location Resort"
+        "title": "Service"
       },
       "displayForms": {
-        "Location Resort": {
-          "dfIdentifier": "label.restaurantlocation.locationresort",
-          "identifier": "label.restaurantlocation.locationresort",
+        "Service": {
+          "dfIdentifier": "label.billing.service",
+          "identifier": "label.billing.service",
           "tags": "",
           "dfTags": "",
-          "title": "Location Resort"
+          "title": "Service"
         }
       },
-      "title": "Location Resort"
+      "title": "Service"
     },
-    "Location State": {
-      "identifier": "attr.restaurantlocation.locationstate",
+    "Tag Budget Code": {
+      "identifier": "attr.billing.tagbudgetcode",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantlocation.locationstate",
+        "identifier": "label.billing.tagbudgetcode",
         "tags": "",
-        "title": "Location State"
+        "title": "Tag Budget Code"
       },
       "displayForms": {
-        "Location State": {
-          "dfIdentifier": "label.restaurantlocation.locationstate",
-          "identifier": "label.restaurantlocation.locationstate",
+        "Tag Budget Code": {
+          "dfIdentifier": "label.billing.tagbudgetcode",
+          "identifier": "label.billing.tagbudgetcode",
           "tags": "",
           "dfTags": "",
-          "title": "Location State"
+          "title": "Tag Budget Code"
         }
       },
-      "title": "Location State"
+      "title": "Tag Budget Code"
     },
-    "Menu Category": {
-      "identifier": "attr.menuitem.menucategory",
+    "Tag Cost Center": {
+      "identifier": "attr.billing.tagcostcenter",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.menuitem.menucategory",
+        "identifier": "label.billing.tagcostcenter",
         "tags": "",
-        "title": "Menu Category"
+        "title": "Tag Cost Center"
       },
       "displayForms": {
-        "Menu Category": {
-          "dfIdentifier": "label.menuitem.menucategory",
-          "identifier": "label.menuitem.menucategory",
+        "Tag Cost Center": {
+          "dfIdentifier": "label.billing.tagcostcenter",
+          "identifier": "label.billing.tagcostcenter",
           "tags": "",
           "dfTags": "",
-          "title": "Menu Category"
+          "title": "Tag Cost Center"
         }
       },
-      "title": "Menu Category"
+      "title": "Tag Cost Center"
     },
-    "Menu Item Id": {
-      "identifier": "attr.menuitem.menuitemid",
+    "Tag Environment": {
+      "identifier": "attr.billing.tagenvironment",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.menuitem.menuitemid",
+        "identifier": "label.billing.tagenvironment",
         "tags": "",
-        "title": "Menu Item Id"
+        "title": "Tag Environment"
       },
       "displayForms": {
-        "Menu Item Id": {
-          "dfIdentifier": "label.menuitem.menuitemid",
-          "identifier": "label.menuitem.menuitemid",
+        "Tag Environment": {
+          "dfIdentifier": "label.billing.tagenvironment",
+          "identifier": "label.billing.tagenvironment",
           "tags": "",
           "dfTags": "",
-          "title": "Menu Item Id"
+          "title": "Tag Environment"
         }
       },
-      "title": "Menu Item Id"
+      "title": "Tag Environment"
     },
-    "Menu Item Name": {
-      "identifier": "attr.menuitem.menuitemname",
+    "Usage Type": {
+      "identifier": "attr.billing.usagetype",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.menuitem.menuitemname",
+        "identifier": "label.billing.usagetype",
         "tags": "",
-        "title": "Menu Item Name"
+        "title": "Usage Type"
       },
       "displayForms": {
-        "Menu Item Name": {
-          "dfIdentifier": "label.menuitem.menuitemname",
-          "identifier": "label.menuitem.menuitemname",
+        "Usage Type": {
+          "dfIdentifier": "label.billing.usagetype",
+          "identifier": "label.billing.usagetype",
           "tags": "",
           "dfTags": "",
-          "title": "Menu Item Name"
+          "title": "Usage Type"
         }
       },
-      "title": "Menu Item Name"
+      "title": "Usage Type"
     },
-    "Restaurant Category": {
-      "identifier": "attr.restaurantprofile.restaurantcategory",
+    "Usage Unit": {
+      "identifier": "attr.billing.usageunit",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.restaurantprofile.restaurantcategory",
+        "identifier": "label.billing.usageunit",
         "tags": "",
-        "title": "Restaurant Category"
+        "title": "Usage Unit"
       },
       "displayForms": {
-        "Restaurant Category": {
-          "dfIdentifier": "label.restaurantprofile.restaurantcategory",
-          "identifier": "label.restaurantprofile.restaurantcategory",
+        "Usage Unit": {
+          "dfIdentifier": "label.billing.usageunit",
+          "identifier": "label.billing.usageunit",
           "tags": "",
           "dfTags": "",
-          "title": "Restaurant Category"
+          "title": "Usage Unit"
         }
       },
-      "title": "Restaurant Category"
+      "title": "Usage Unit"
     },
-    "Transaction Id": {
-      "identifier": "attr.salesdetailfact.transactionid",
+    "Vendor Account": {
+      "identifier": "attr.billing.vendoraccount",
       "tags": "",
       "defaultDisplayForm": {
-        "identifier": "label.salesdetailfact.transactionid",
+        "identifier": "label.billing.vendoraccount",
         "tags": "",
-        "title": "Transaction Id"
+        "title": "Vendor Account"
       },
       "displayForms": {
-        "Transaction Id": {
-          "dfIdentifier": "label.salesdetailfact.transactionid",
-          "identifier": "label.salesdetailfact.transactionid",
+        "Vendor Account": {
+          "dfIdentifier": "label.billing.vendoraccount",
+          "identifier": "label.billing.vendoraccount",
           "tags": "",
           "dfTags": "",
-          "title": "Transaction Id"
+          "title": "Vendor Account"
         }
       },
-      "title": "Transaction Id"
+      "title": "Vendor Account"
+    },
+    "Vendor Account Name": {
+      "identifier": "attr.billing.vendor",
+      "tags": "",
+      "defaultDisplayForm": {
+        "identifier": "label.billing.vendor",
+        "tags": "",
+        "title": "Vendor Account Name"
+      },
+      "displayForms": {
+        "Vendor Account Name": {
+          "dfIdentifier": "label.billing.vendor",
+          "identifier": "label.billing.vendor",
+          "tags": "",
+          "dfTags": "",
+          "title": "Vendor Account Name"
+        }
+      },
+      "title": "Vendor Account Name"
     }
   },
   "visualizations": {
-    "123": {
-      "identifier": "ab3KtvTggKY5",
+    "Category/RT Costs": {
+      "identifier": "acr4cG0mfAxb",
       "tags": "",
-      "title": "123"
-    },
-    "Avg Entree %": {
-      "identifier": "abHVSjwFgk4i",
-      "tags": "",
-      "title": "Avg Entree %"
-    },
-    "Total Sales by City": {
-      "identifier": "acPWDTL2bJeX",
-      "tags": "",
-      "title": "Total Sales by City"
-    },
-    "Total Sales by Location Last Quarter": {
-      "identifier": "abmeiDsUhTNW",
-      "tags": "",
-      "title": "Total Sales by Location Last Quarter"
-    },
-    "Total Sales by Week": {
-      "identifier": "aeSCEMsTfoj8",
-      "tags": "",
-      "title": "Total Sales by Week"
-    },
-    "$ Check Value by Trx": {
-      "identifier": "aa7N3HExdhKw",
-      "tags": "",
-      "title": "$ Check Value by Trx"
-    },
-    "$ Total Sales by Location": {
-      "identifier": "aaBN5UG3dXu4",
-      "tags": "",
-      "title": "$ Total Sales by Location"
-    },
-    "Sales over Time": {
-      "identifier": "acFJltTsifSQ",
-      "tags": "",
-      "title": "Sales over Time"
-    },
-    "Costs over Time": {
-      "identifier": "abHJmzD1fZrW",
-      "tags": "",
-      "title": "Costs over Time"
-    },
-    "Labor Costs vs Scheduled Costs": {
-      "identifier": "abhJpedgcfU2",
-      "tags": "",
-      "title": "Labor Costs vs Scheduled Costs"
-    },
-    "Gross profit % (date filters)": {
-      "identifier": "acOfuc2QiDZK",
-      "tags": "",
-      "title": "Gross profit % (date filters)"
-    },
-    "Table report Labor Costs Vs Scheduled Costs": {
-      "identifier": "aatFRvXBdilm",
-      "tags": "",
-      "title": "Table report Labor Costs Vs Scheduled Costs"
-    },
-    "Franchise Fees": {
-      "identifier": "aahnVeLugyFj",
-      "tags": "",
-      "title": "Franchise Fees"
-    },
-    "Franchise Fees 2017": {
-      "identifier": "aaZWa46oh9cJ",
-      "tags": "",
-      "title": "Franchise Fees 2017"
-    },
-    "Too many datapoints": {
-      "identifier": "afgeutl8hfOe",
-      "tags": "",
-      "title": "Too many datapoints"
+      "title": "Category/RT Costs"
     },
     "Test": {
-      "identifier": "ab6KtJ2LfmCV",
+      "identifier": "abhaog95dXG4",
       "tags": "",
       "title": "Test"
     },
-    "asdf": {
-      "identifier": "aepRx0i8haM7",
+    "Category/RT Costs (by Jiri)": {
+      "identifier": "aaVDdPFygGdE",
       "tags": "",
-      "title": "asdf"
-    },
-    "too many data points": {
-      "identifier": "adzkfjmWiajP",
-      "tags": "",
-      "title": "too many data points"
-    },
-    "test-pzb": {
-      "identifier": "aa0wmZDugnUX",
-      "tags": "",
-      "title": "test-pzb"
-    },
-    "# Checks viewed by City stacked by Name": {
-      "identifier": "aby6oS6DbpFX",
-      "tags": "",
-      "title": "# Checks viewed by City stacked by Name"
-    },
-    "Kyle's Insight": {
-      "identifier": "aazlme4wcy3O",
-      "tags": "",
-      "title": "Kyle's Insight"
-    },
-    "Gross Profit by location": {
-      "identifier": "ad4lhli5dn5v",
-      "tags": "",
-      "title": "Gross Profit by location"
-    },
-    "ui-example-1": {
-      "identifier": "aasloSSGgcAs",
-      "tags": "",
-      "title": "ui-example-1"
-    },
-    "DanielsFirstKPI": {
-      "identifier": "aaHloqmuf0Ea",
-      "tags": "",
-      "title": "DanielsFirstKPI"
-    },
-    "states": {
-      "identifier": "aayloZPWhziV",
-      "tags": "",
-      "title": "states"
-    },
-    "Jakub's visualisation": {
-      "identifier": "abNloeB7iy4S",
-      "tags": "",
-      "title": "Jakub's visualisation"
-    },
-    "sdf_restrant_per_city": {
-      "identifier": "aamlpUW9d6gc",
-      "tags": "",
-      "title": "sdf_restrant_per_city"
-    },
-    "fargo": {
-      "identifier": "acyllEgrhybI",
-      "tags": "",
-      "title": "fargo"
-    },
-    "new_test": {
-      "identifier": "aeHmbn7Ciok6",
-      "tags": "",
-      "title": "new_test"
-    },
-    "Zajícův insight 2": {
-      "identifier": "abgprmHgf3uq",
-      "tags": "",
-      "title": "Zajícův insight 2"
-    },
-    "previousPeriod": {
-      "identifier": "aaMNtrdagrFW",
-      "tags": "",
-      "title": "previousPeriod"
-    },
-    "Table to Pivot": {
-      "identifier": "aaYPSrp3bqyQ",
-      "tags": "",
-      "title": "Table to Pivot"
-    },
-    "Table to Pivot #2": {
-      "identifier": "aaRUKANgdCex",
-      "tags": "",
-      "title": "Table to Pivot #2"
-    },
-    "Table to Pivot #3": {
-      "identifier": "abdUSeYRfG4P",
-      "tags": "",
-      "title": "Table to Pivot #3"
-    },
-    "Bubble Chart": {
-      "identifier": "aa6D2HhshWHB",
-      "tags": "",
-      "title": "Bubble Chart"
-    },
-    "hackathon": {
-      "identifier": "abxJEfZhfOk9",
-      "tags": "",
-      "title": "hackathon"
-    },
-    "pie2": {
-      "identifier": "abcJGKsFhpp5",
-      "tags": "",
-      "title": "pie2"
-    },
-    "Column Chart": {
-      "identifier": "acKLst3Faran",
-      "tags": "",
-      "title": "Column Chart"
-    },
-    "Dummy chart": {
-      "identifier": "abw8Uco2cT1B",
-      "tags": "",
-      "title": "Dummy chart"
-    },
-    "test insight 1": {
-      "identifier": "ab68UlSRcNcP",
-      "tags": "",
-      "title": "test insight 1"
-    },
-    "Pivot test": {
-      "identifier": "abIFNtySe2mv",
-      "tags": "",
-      "title": "Pivot test"
-    },
-    "Table Without Measure": {
-      "identifier": "act2Khypdnz6",
-      "tags": "",
-      "title": "Table Without Measure"
-    },
-    "asdfasdf": {
-      "identifier": "ab7CymgRcuDx",
-      "tags": "",
-      "title": "asdfasdf"
-    },
-    "PivotTable sort over column attribute TEST": {
-      "identifier": "ackXHPqtheSt",
-      "tags": "",
-      "title": "PivotTable sort over column attribute TEST"
-    },
-    "Table Totals test": {
-      "identifier": "abS3P51kcXLN",
-      "tags": "",
-      "title": "Table Totals test"
+      "title": "Category/RT Costs (by Jiri)"
     }
   },
   "dateDataSets": {
-    "Date (Date)": {
-      "identifier": "date.dataset.dt",
+    "Date (Billing)": {
+      "identifier": "billing.dataset.dt",
       "tags": "",
       "attributes": {
-        "Year (Date)": {
-          "identifier": "date.year",
+        "Year (Billing)": {
+          "identifier": "billing.year",
           "tags": "date year",
-          "title": "Year (Date)",
+          "title": "Year (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aag81lMifn6q",
+            "identifier": "billing.aag81lMifn6q",
             "tags": "",
-            "title": "Year (Date)"
+            "title": "Year (Billing)"
           },
           "displayForms": {
-            "Year (Date)": {
-              "identifier": "date.aag81lMifn6q",
+            "Year (Billing)": {
+              "identifier": "billing.aag81lMifn6q",
               "tags": "",
-              "title": "Year (Date)"
+              "title": "Year (Billing)"
             }
           }
         },
-        "Quarter (Date)": {
-          "identifier": "date.quarter.in.year",
+        "Quarter (Billing)": {
+          "identifier": "billing.quarter.in.year",
           "tags": "date quarter year",
-          "title": "Quarter (Date)",
+          "title": "Quarter (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aam81lMifn6q",
+            "identifier": "billing.aam81lMifn6q",
             "tags": "",
-            "title": "default (Date)"
+            "title": "default (Billing)"
           },
           "displayForms": {
-            "default (Date)": {
-              "identifier": "date.aam81lMifn6q",
+            "default (Billing)": {
+              "identifier": "billing.aam81lMifn6q",
               "tags": "",
-              "title": "default (Date)"
+              "title": "default (Billing)"
             }
           }
         },
-        "Week (Sun-Sat)/Year (Date)": {
-          "identifier": "date.week",
+        "Week (Sun-Sat)/Year (Billing)": {
+          "identifier": "billing.week",
           "tags": "date week",
-          "title": "Week (Sun-Sat)/Year (Date)",
+          "title": "Week (Sun-Sat)/Year (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aaA81lMifn6q",
+            "identifier": "billing.aaA81lMifn6q",
             "tags": "",
-            "title": "Week #/Year (W1/2010) (Date)"
+            "title": "Week #/Year (W1/2010) (Billing)"
           },
           "displayForms": {
-            "Week #/Year (W1/2010) (Date)": {
-              "identifier": "date.aaA81lMifn6q",
+            "Week #/Year (W1/2010) (Billing)": {
+              "identifier": "billing.aaA81lMifn6q",
               "tags": "",
-              "title": "Week #/Year (W1/2010) (Date)"
+              "title": "Week #/Year (W1/2010) (Billing)"
             },
-            "Week Starting (Date)": {
-              "identifier": "date.aaw81lMifn6q",
+            "Week Starting (Billing)": {
+              "identifier": "billing.aaw81lMifn6q",
               "tags": "",
-              "title": "Week Starting (Date)"
+              "title": "Week Starting (Billing)"
             },
-            "From - To (Date)": {
-              "identifier": "date.aau81lMifn6q",
+            "From - To (Billing)": {
+              "identifier": "billing.aau81lMifn6q",
               "tags": "",
-              "title": "From - To (Date)"
+              "title": "From - To (Billing)"
             },
-            "Week #/Year (Cont.) (Date)": {
-              "identifier": "date.aay81lMifn6q",
+            "Week #/Year (Cont.) (Billing)": {
+              "identifier": "billing.aay81lMifn6q",
               "tags": "",
-              "title": "Week #/Year (Cont.) (Date)"
+              "title": "Week #/Year (Cont.) (Billing)"
             },
-            "Wk/Qtr/Year (Cont.) (Date)": {
-              "identifier": "date.aaC81lMifn6q",
+            "Wk/Qtr/Year (Cont.) (Billing)": {
+              "identifier": "billing.aaC81lMifn6q",
               "tags": "",
-              "title": "Wk/Qtr/Year (Cont.) (Date)"
+              "title": "Wk/Qtr/Year (Cont.) (Billing)"
             },
-            "Wk/Qtr/Year (Date)": {
-              "identifier": "date.aas81lMifn6q",
+            "Wk/Qtr/Year (Billing)": {
+              "identifier": "billing.aas81lMifn6q",
               "tags": "",
-              "title": "Wk/Qtr/Year (Date)"
+              "title": "Wk/Qtr/Year (Billing)"
             }
           }
         },
-        "Week (Sun-Sat) (Date)": {
-          "identifier": "date.week.in.year",
+        "Week (Sun-Sat) (Billing)": {
+          "identifier": "billing.week.in.year",
           "tags": "date week year",
-          "title": "Week (Sun-Sat) (Date)",
+          "title": "Week (Sun-Sat) (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aaI81lMifn6q",
+            "identifier": "billing.aaI81lMifn6q",
             "tags": "",
-            "title": "Number US (Date)"
+            "title": "Number US (Billing)"
           },
           "displayForms": {
-            "Number US (Date)": {
-              "identifier": "date.aaI81lMifn6q",
+            "Number US (Billing)": {
+              "identifier": "billing.aaI81lMifn6q",
               "tags": "",
-              "title": "Number US (Date)"
+              "title": "Number US (Billing)"
             }
           }
         },
-        "Week (Sun-Sat) of Qtr (Date)": {
-          "identifier": "date.week.in.quarter",
+        "Week (Sun-Sat) of Qtr (Billing)": {
+          "identifier": "billing.week.in.quarter",
           "tags": "date quarter week",
-          "title": "Week (Sun-Sat) of Qtr (Date)",
+          "title": "Week (Sun-Sat) of Qtr (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aaO81lMifn6q",
+            "identifier": "billing.aaO81lMifn6q",
             "tags": "",
-            "title": "Number US (Date)"
+            "title": "Number US (Billing)"
           },
           "displayForms": {
-            "Number US (Date)": {
-              "identifier": "date.aaO81lMifn6q",
+            "Number US (Billing)": {
+              "identifier": "billing.aaO81lMifn6q",
               "tags": "",
-              "title": "Number US (Date)"
+              "title": "Number US (Billing)"
             }
           }
         },
-        "Week (Mon-Sun)/Year (Date)": {
-          "identifier": "date.euweek",
+        "Week (Mon-Sun)/Year (Billing)": {
+          "identifier": "billing.euweek",
           "tags": "date eu week",
-          "title": "Week (Mon-Sun)/Year (Date)",
+          "title": "Week (Mon-Sun)/Year (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aa281lMifn6q",
+            "identifier": "billing.aa281lMifn6q",
             "tags": "",
-            "title": "Week #/Year (W1/2010) (Date)"
+            "title": "Week #/Year (W1/2010) (Billing)"
           },
           "displayForms": {
-            "Week #/Year (W1/2010) (Date)": {
-              "identifier": "date.aa281lMifn6q",
+            "Week #/Year (W1/2010) (Billing)": {
+              "identifier": "billing.aa281lMifn6q",
               "tags": "",
-              "title": "Week #/Year (W1/2010) (Date)"
+              "title": "Week #/Year (W1/2010) (Billing)"
             },
-            "Week Starting (Date)": {
-              "identifier": "date.aaY81lMifn6q",
+            "Week Starting (Billing)": {
+              "identifier": "billing.aaY81lMifn6q",
               "tags": "",
-              "title": "Week Starting (Date)"
+              "title": "Week Starting (Billing)"
             },
-            "From - To (Date)": {
-              "identifier": "date.aaW81lMifn6q",
+            "From - To (Billing)": {
+              "identifier": "billing.aaW81lMifn6q",
               "tags": "",
-              "title": "From - To (Date)"
+              "title": "From - To (Billing)"
             }
           }
         },
-        "Week (Mon-Sun) (Date)": {
-          "identifier": "date.euweek.in.year",
+        "Week (Mon-Sun) (Billing)": {
+          "identifier": "billing.euweek.in.year",
           "tags": "date eu week year",
-          "title": "Week (Mon-Sun) (Date)",
+          "title": "Week (Mon-Sun) (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aba81lMifn6q",
+            "identifier": "billing.aba81lMifn6q",
             "tags": "",
-            "title": "Number EU (Date)"
+            "title": "Number EU (Billing)"
           },
           "displayForms": {
-            "Number EU (Date)": {
-              "identifier": "date.aba81lMifn6q",
+            "Number EU (Billing)": {
+              "identifier": "billing.aba81lMifn6q",
               "tags": "",
-              "title": "Number EU (Date)"
+              "title": "Number EU (Billing)"
             }
           }
         },
-        "Week (Mon-Sun) of Qtr (Date)": {
-          "identifier": "date.euweek.in.quarter",
+        "Week (Mon-Sun) of Qtr (Billing)": {
+          "identifier": "billing.euweek.in.quarter",
           "tags": "date eu quarter week",
-          "title": "Week (Mon-Sun) of Qtr (Date)",
+          "title": "Week (Mon-Sun) of Qtr (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.abg81lMifn6q",
+            "identifier": "billing.abg81lMifn6q",
             "tags": "",
-            "title": "Number EU (Date)"
+            "title": "Number EU (Billing)"
           },
           "displayForms": {
-            "Number EU (Date)": {
-              "identifier": "date.abg81lMifn6q",
+            "Number EU (Billing)": {
+              "identifier": "billing.abg81lMifn6q",
               "tags": "",
-              "title": "Number EU (Date)"
+              "title": "Number EU (Billing)"
             }
           }
         },
-        "Month (Date)": {
-          "identifier": "date.month.in.year",
+        "Month (Billing)": {
+          "identifier": "billing.month.in.year",
           "tags": "date month year",
-          "title": "Month (Date)",
+          "title": "Month (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.abm81lMifn6q",
+            "identifier": "billing.abm81lMifn6q",
             "tags": "",
-            "title": "Short (Jan) (Date)"
+            "title": "Short (Jan) (Billing)"
           },
           "displayForms": {
-            "Short (Jan) (Date)": {
-              "identifier": "date.abm81lMifn6q",
+            "Short (Jan) (Billing)": {
+              "identifier": "billing.abm81lMifn6q",
               "tags": "",
-              "title": "Short (Jan) (Date)"
+              "title": "Short (Jan) (Billing)"
             },
-            "Long (January) (Date)": {
-              "identifier": "date.abs81lMifn6q",
+            "Long (January) (Billing)": {
+              "identifier": "billing.abs81lMifn6q",
               "tags": "",
-              "title": "Long (January) (Date)"
+              "title": "Long (January) (Billing)"
             },
-            "Number (M1) (Date)": {
-              "identifier": "date.abq81lMifn6q",
+            "Number (M1) (Billing)": {
+              "identifier": "billing.abq81lMifn6q",
               "tags": "",
-              "title": "Number (M1) (Date)"
+              "title": "Number (M1) (Billing)"
             },
-            "M/Q (M1/Q1) (Date)": {
-              "identifier": "date.abo81lMifn6q",
+            "M/Q (M1/Q1) (Billing)": {
+              "identifier": "billing.abo81lMifn6q",
               "tags": "",
-              "title": "M/Q (M1/Q1) (Date)"
+              "title": "M/Q (M1/Q1) (Billing)"
             }
           }
         },
-        "Month of Quarter (Date)": {
-          "identifier": "date.month.in.quarter",
+        "Month of Quarter (Billing)": {
+          "identifier": "billing.month.in.quarter",
           "tags": "date month quarter",
-          "title": "Month of Quarter (Date)",
+          "title": "Month of Quarter (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aby81lMifn6q",
+            "identifier": "billing.aby81lMifn6q",
             "tags": "",
-            "title": "Number (Date)"
+            "title": "Number (Billing)"
           },
           "displayForms": {
-            "Number (Date)": {
-              "identifier": "date.aby81lMifn6q",
+            "Number (Billing)": {
+              "identifier": "billing.aby81lMifn6q",
               "tags": "",
-              "title": "Number (Date)"
+              "title": "Number (Billing)"
             }
           }
         },
-        "Day of Year (Date)": {
-          "identifier": "date.day.in.year",
+        "Day of Year (Billing)": {
+          "identifier": "billing.day.in.year",
           "tags": "date day year",
-          "title": "Day of Year (Date)",
+          "title": "Day of Year (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.abE81lMifn6q",
+            "identifier": "billing.abE81lMifn6q",
             "tags": "",
-            "title": "default (Date)"
+            "title": "default (Billing)"
           },
           "displayForms": {
-            "default (Date)": {
-              "identifier": "date.abE81lMifn6q",
+            "default (Billing)": {
+              "identifier": "billing.abE81lMifn6q",
               "tags": "",
-              "title": "default (Date)"
+              "title": "default (Billing)"
             }
           }
         },
-        "Day of Week (Sun-Sat) (Date)": {
-          "identifier": "date.day.in.week",
+        "Day of Week (Sun-Sat) (Billing)": {
+          "identifier": "billing.day.in.week",
           "tags": "date day week",
-          "title": "Day of Week (Sun-Sat) (Date)",
+          "title": "Day of Week (Sun-Sat) (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.abK81lMifn6q",
+            "identifier": "billing.abK81lMifn6q",
             "tags": "",
-            "title": "Short (Sun) (Date)"
+            "title": "Short (Sun) (Billing)"
           },
           "displayForms": {
-            "Short (Sun) (Date)": {
-              "identifier": "date.abK81lMifn6q",
+            "Short (Sun) (Billing)": {
+              "identifier": "billing.abK81lMifn6q",
               "tags": "",
-              "title": "Short (Sun) (Date)"
+              "title": "Short (Sun) (Billing)"
             },
-            "Long (Sunday) (Date)": {
-              "identifier": "date.abO81lMifn6q",
+            "Long (Sunday) (Billing)": {
+              "identifier": "billing.abO81lMifn6q",
               "tags": "",
-              "title": "Long (Sunday) (Date)"
+              "title": "Long (Sunday) (Billing)"
             },
-            "Number (1=Sunday) (Date)": {
-              "identifier": "date.abM81lMifn6q",
+            "Number (1=Sunday) (Billing)": {
+              "identifier": "billing.abM81lMifn6q",
               "tags": "",
-              "title": "Number (1=Sunday) (Date)"
+              "title": "Number (1=Sunday) (Billing)"
             }
           }
         },
-        "Day of Week (Mon-Sun) (Date)": {
-          "identifier": "date.day.in.euweek",
+        "Day of Week (Mon-Sun) (Billing)": {
+          "identifier": "billing.day.in.euweek",
           "tags": "date day eu week",
-          "title": "Day of Week (Mon-Sun) (Date)",
+          "title": "Day of Week (Mon-Sun) (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.abU81lMifn6q",
+            "identifier": "billing.abU81lMifn6q",
             "tags": "",
-            "title": "Short (Mon) (Date)"
+            "title": "Short (Mon) (Billing)"
           },
           "displayForms": {
-            "Short (Mon) (Date)": {
-              "identifier": "date.abU81lMifn6q",
+            "Short (Mon) (Billing)": {
+              "identifier": "billing.abU81lMifn6q",
               "tags": "",
-              "title": "Short (Mon) (Date)"
+              "title": "Short (Mon) (Billing)"
             },
-            "Long (Monday) (Date)": {
-              "identifier": "date.abY81lMifn6q",
+            "Long (Monday) (Billing)": {
+              "identifier": "billing.abY81lMifn6q",
               "tags": "",
-              "title": "Long (Monday) (Date)"
+              "title": "Long (Monday) (Billing)"
             },
-            "Number (1=Monday) (Date)": {
-              "identifier": "date.abW81lMifn6q",
+            "Number (1=Monday) (Billing)": {
+              "identifier": "billing.abW81lMifn6q",
               "tags": "",
-              "title": "Number (1=Monday) (Date)"
+              "title": "Number (1=Monday) (Billing)"
             }
           }
         },
-        "Day of Quarter (Date)": {
-          "identifier": "date.day.in.quarter",
+        "Day of Quarter (Billing)": {
+          "identifier": "billing.day.in.quarter",
           "tags": "date day quarter",
-          "title": "Day of Quarter (Date)",
+          "title": "Day of Quarter (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.ab481lMifn6q",
+            "identifier": "billing.ab481lMifn6q",
             "tags": "",
-            "title": "default (Date)"
+            "title": "default (Billing)"
           },
           "displayForms": {
-            "default (Date)": {
-              "identifier": "date.ab481lMifn6q",
+            "default (Billing)": {
+              "identifier": "billing.ab481lMifn6q",
               "tags": "",
-              "title": "default (Date)"
+              "title": "default (Billing)"
             }
           }
         },
-        "Day of Month (Date)": {
-          "identifier": "date.day.in.month",
+        "Day of Month (Billing)": {
+          "identifier": "billing.day.in.month",
           "tags": "date day month",
-          "title": "Day of Month (Date)",
+          "title": "Day of Month (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aca81lMifn6q",
+            "identifier": "billing.aca81lMifn6q",
             "tags": "",
-            "title": "default (Date)"
+            "title": "default (Billing)"
           },
           "displayForms": {
-            "default (Date)": {
-              "identifier": "date.aca81lMifn6q",
+            "default (Billing)": {
+              "identifier": "billing.aca81lMifn6q",
               "tags": "",
-              "title": "default (Date)"
+              "title": "default (Billing)"
             }
           }
         },
-        "Quarter/Year (Date)": {
-          "identifier": "date.quarter",
+        "Quarter/Year (Billing)": {
+          "identifier": "billing.quarter",
           "tags": "date quarter",
-          "title": "Quarter/Year (Date)",
+          "title": "Quarter/Year (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.aci81lMifn6q",
+            "identifier": "billing.aci81lMifn6q",
             "tags": "",
-            "title": "US Short (Date)"
+            "title": "US Short (Billing)"
           },
           "displayForms": {
-            "US Short (Date)": {
-              "identifier": "date.aci81lMifn6q",
+            "US Short (Billing)": {
+              "identifier": "billing.aci81lMifn6q",
               "tags": "",
-              "title": "US Short (Date)"
+              "title": "US Short (Billing)"
             }
           }
         },
-        "Month/Year (Date)": {
-          "identifier": "date.month",
+        "Month/Year (Billing)": {
+          "identifier": "billing.month",
           "tags": "date month",
-          "title": "Month/Year (Date)",
+          "title": "Month/Year (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.act81lMifn6q",
+            "identifier": "billing.act81lMifn6q",
             "tags": "",
-            "title": "Short (Jan 2010) (Date)"
+            "title": "Short (Jan 2010) (Billing)"
           },
           "displayForms": {
-            "Short (Jan 2010) (Date)": {
-              "identifier": "date.act81lMifn6q",
+            "Short (Jan 2010) (Billing)": {
+              "identifier": "billing.act81lMifn6q",
               "tags": "",
-              "title": "Short (Jan 2010) (Date)"
+              "title": "Short (Jan 2010) (Billing)"
             },
-            "Long (January 2010) (Date)": {
-              "identifier": "date.acx81lMifn6q",
+            "Long (January 2010) (Billing)": {
+              "identifier": "billing.acx81lMifn6q",
               "tags": "",
-              "title": "Long (January 2010) (Date)"
+              "title": "Long (January 2010) (Billing)"
             },
-            "Number (1/2010) (Date)": {
-              "identifier": "date.acv81lMifn6q",
+            "Number (1/2010) (Billing)": {
+              "identifier": "billing.acv81lMifn6q",
               "tags": "",
-              "title": "Number (1/2010) (Date)"
+              "title": "Number (1/2010) (Billing)"
             }
           }
         },
-        "Date (Date)": {
-          "identifier": "date.date",
+        "Date (Billing)": {
+          "identifier": "billing.date",
           "tags": "date",
-          "title": "Date (Date)",
+          "title": "Date (Billing)",
           "defaultDisplayForm": {
-            "identifier": "date.date.mmddyyyy",
+            "identifier": "billing.date.mmddyyyy",
             "tags": "",
-            "title": "mm/dd/yyyy (Date)"
+            "title": "mm/dd/yyyy (Billing)"
           },
           "displayForms": {
-            "mm/dd/yyyy (Date)": {
-              "identifier": "date.date.mmddyyyy",
+            "mm/dd/yyyy (Billing)": {
+              "identifier": "billing.date.mmddyyyy",
               "tags": "",
-              "title": "mm/dd/yyyy (Date)"
+              "title": "mm/dd/yyyy (Billing)"
             },
-            "yyyy-mm-dd (Date)": {
-              "identifier": "date.date.yyyymmdd",
+            "yyyy-mm-dd (Billing)": {
+              "identifier": "billing.date.yyyymmdd",
               "tags": "",
-              "title": "yyyy-mm-dd (Date)"
+              "title": "yyyy-mm-dd (Billing)"
             },
-            "m/d/yy (no leading zeroes) (Date)": {
-              "identifier": "date.date.mdyy",
+            "m/d/yy (no leading zeroes) (Billing)": {
+              "identifier": "billing.date.mdyy",
               "tags": "",
-              "title": "m/d/yy (no leading zeroes) (Date)"
+              "title": "m/d/yy (no leading zeroes) (Billing)"
             },
-            "Long (Mon, Jan 1, 2010) (Date)": {
-              "identifier": "date.date.long",
+            "Long (Mon, Jan 1, 2010) (Billing)": {
+              "identifier": "billing.date.long",
               "tags": "",
-              "title": "Long (Mon, Jan 1, 2010) (Date)"
+              "title": "Long (Mon, Jan 1, 2010) (Billing)"
             },
-            "dd/mm/yyyy (Date)": {
-              "identifier": "date.date.ddmmyyyy",
+            "dd/mm/yyyy (Billing)": {
+              "identifier": "billing.date.ddmmyyyy",
               "tags": "",
-              "title": "dd/mm/yyyy (Date)"
+              "title": "dd/mm/yyyy (Billing)"
             },
-            "dd-mm-yyyy (Date)": {
-              "identifier": "date.date.eddmmyyyy",
+            "dd-mm-yyyy (Billing)": {
+              "identifier": "billing.date.eddmmyyyy",
               "tags": "",
-              "title": "dd-mm-yyyy (Date)"
+              "title": "dd-mm-yyyy (Billing)"
             }
           }
         }
       },
-      "title": "Date (Date)"
-    },
-    "Date (Timeline)": {
-      "identifier": "timeline.dataset.dt",
-      "tags": "",
-      "attributes": {
-        "Year (Timeline)": {
-          "identifier": "timeline.year",
-          "tags": "date year",
-          "title": "Year (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aag81lMifn6q",
-            "tags": "",
-            "title": "Year (Timeline)"
-          },
-          "displayForms": {
-            "Year (Timeline)": {
-              "identifier": "timeline.aag81lMifn6q",
-              "tags": "",
-              "title": "Year (Timeline)"
-            }
-          }
-        },
-        "Quarter (Timeline)": {
-          "identifier": "timeline.quarter.in.year",
-          "tags": "date quarter year",
-          "title": "Quarter (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aam81lMifn6q",
-            "tags": "",
-            "title": "default (Timeline)"
-          },
-          "displayForms": {
-            "default (Timeline)": {
-              "identifier": "timeline.aam81lMifn6q",
-              "tags": "",
-              "title": "default (Timeline)"
-            }
-          }
-        },
-        "Week (Sun-Sat)/Year (Timeline)": {
-          "identifier": "timeline.week",
-          "tags": "date week",
-          "title": "Week (Sun-Sat)/Year (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aaA81lMifn6q",
-            "tags": "",
-            "title": "Week #/Year (W1/2010) (Timeline)"
-          },
-          "displayForms": {
-            "Week #/Year (W1/2010) (Timeline)": {
-              "identifier": "timeline.aaA81lMifn6q",
-              "tags": "",
-              "title": "Week #/Year (W1/2010) (Timeline)"
-            },
-            "Week Starting (Timeline)": {
-              "identifier": "timeline.aaw81lMifn6q",
-              "tags": "",
-              "title": "Week Starting (Timeline)"
-            },
-            "From - To (Timeline)": {
-              "identifier": "timeline.aau81lMifn6q",
-              "tags": "",
-              "title": "From - To (Timeline)"
-            },
-            "Week #/Year (Cont.) (Timeline)": {
-              "identifier": "timeline.aay81lMifn6q",
-              "tags": "",
-              "title": "Week #/Year (Cont.) (Timeline)"
-            },
-            "Wk/Qtr/Year (Cont.) (Timeline)": {
-              "identifier": "timeline.aaC81lMifn6q",
-              "tags": "",
-              "title": "Wk/Qtr/Year (Cont.) (Timeline)"
-            },
-            "Wk/Qtr/Year (Timeline)": {
-              "identifier": "timeline.aas81lMifn6q",
-              "tags": "",
-              "title": "Wk/Qtr/Year (Timeline)"
-            }
-          }
-        },
-        "Week (Sun-Sat) (Timeline)": {
-          "identifier": "timeline.week.in.year",
-          "tags": "date week year",
-          "title": "Week (Sun-Sat) (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aaI81lMifn6q",
-            "tags": "",
-            "title": "Number US (Timeline)"
-          },
-          "displayForms": {
-            "Number US (Timeline)": {
-              "identifier": "timeline.aaI81lMifn6q",
-              "tags": "",
-              "title": "Number US (Timeline)"
-            }
-          }
-        },
-        "Week (Sun-Sat) of Qtr (Timeline)": {
-          "identifier": "timeline.week.in.quarter",
-          "tags": "date quarter week",
-          "title": "Week (Sun-Sat) of Qtr (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aaO81lMifn6q",
-            "tags": "",
-            "title": "Number US (Timeline)"
-          },
-          "displayForms": {
-            "Number US (Timeline)": {
-              "identifier": "timeline.aaO81lMifn6q",
-              "tags": "",
-              "title": "Number US (Timeline)"
-            }
-          }
-        },
-        "Week (Mon-Sun)/Year (Timeline)": {
-          "identifier": "timeline.euweek",
-          "tags": "date eu week",
-          "title": "Week (Mon-Sun)/Year (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aa281lMifn6q",
-            "tags": "",
-            "title": "Week #/Year (W1/2010) (Timeline)"
-          },
-          "displayForms": {
-            "Week #/Year (W1/2010) (Timeline)": {
-              "identifier": "timeline.aa281lMifn6q",
-              "tags": "",
-              "title": "Week #/Year (W1/2010) (Timeline)"
-            },
-            "Week Starting (Timeline)": {
-              "identifier": "timeline.aaY81lMifn6q",
-              "tags": "",
-              "title": "Week Starting (Timeline)"
-            },
-            "From - To (Timeline)": {
-              "identifier": "timeline.aaW81lMifn6q",
-              "tags": "",
-              "title": "From - To (Timeline)"
-            }
-          }
-        },
-        "Week (Mon-Sun) (Timeline)": {
-          "identifier": "timeline.euweek.in.year",
-          "tags": "date eu week year",
-          "title": "Week (Mon-Sun) (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aba81lMifn6q",
-            "tags": "",
-            "title": "Number EU (Timeline)"
-          },
-          "displayForms": {
-            "Number EU (Timeline)": {
-              "identifier": "timeline.aba81lMifn6q",
-              "tags": "",
-              "title": "Number EU (Timeline)"
-            }
-          }
-        },
-        "Week (Mon-Sun) of Qtr (Timeline)": {
-          "identifier": "timeline.euweek.in.quarter",
-          "tags": "date eu quarter week",
-          "title": "Week (Mon-Sun) of Qtr (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.abg81lMifn6q",
-            "tags": "",
-            "title": "Number EU (Timeline)"
-          },
-          "displayForms": {
-            "Number EU (Timeline)": {
-              "identifier": "timeline.abg81lMifn6q",
-              "tags": "",
-              "title": "Number EU (Timeline)"
-            }
-          }
-        },
-        "Month (Timeline)": {
-          "identifier": "timeline.month.in.year",
-          "tags": "date month year",
-          "title": "Month (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.abm81lMifn6q",
-            "tags": "",
-            "title": "Short (Jan) (Timeline)"
-          },
-          "displayForms": {
-            "Short (Jan) (Timeline)": {
-              "identifier": "timeline.abm81lMifn6q",
-              "tags": "",
-              "title": "Short (Jan) (Timeline)"
-            },
-            "Long (January) (Timeline)": {
-              "identifier": "timeline.abs81lMifn6q",
-              "tags": "",
-              "title": "Long (January) (Timeline)"
-            },
-            "Number (M1) (Timeline)": {
-              "identifier": "timeline.abq81lMifn6q",
-              "tags": "",
-              "title": "Number (M1) (Timeline)"
-            },
-            "M/Q (M1/Q1) (Timeline)": {
-              "identifier": "timeline.abo81lMifn6q",
-              "tags": "",
-              "title": "M/Q (M1/Q1) (Timeline)"
-            }
-          }
-        },
-        "Month of Quarter (Timeline)": {
-          "identifier": "timeline.month.in.quarter",
-          "tags": "date month quarter",
-          "title": "Month of Quarter (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aby81lMifn6q",
-            "tags": "",
-            "title": "Number (Timeline)"
-          },
-          "displayForms": {
-            "Number (Timeline)": {
-              "identifier": "timeline.aby81lMifn6q",
-              "tags": "",
-              "title": "Number (Timeline)"
-            }
-          }
-        },
-        "Day of Year (Timeline)": {
-          "identifier": "timeline.day.in.year",
-          "tags": "date day year",
-          "title": "Day of Year (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.abE81lMifn6q",
-            "tags": "",
-            "title": "default (Timeline)"
-          },
-          "displayForms": {
-            "default (Timeline)": {
-              "identifier": "timeline.abE81lMifn6q",
-              "tags": "",
-              "title": "default (Timeline)"
-            }
-          }
-        },
-        "Day of Week (Sun-Sat) (Timeline)": {
-          "identifier": "timeline.day.in.week",
-          "tags": "date day week",
-          "title": "Day of Week (Sun-Sat) (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.abK81lMifn6q",
-            "tags": "",
-            "title": "Short (Sun) (Timeline)"
-          },
-          "displayForms": {
-            "Short (Sun) (Timeline)": {
-              "identifier": "timeline.abK81lMifn6q",
-              "tags": "",
-              "title": "Short (Sun) (Timeline)"
-            },
-            "Long (Sunday) (Timeline)": {
-              "identifier": "timeline.abO81lMifn6q",
-              "tags": "",
-              "title": "Long (Sunday) (Timeline)"
-            },
-            "Number (1=Sunday) (Timeline)": {
-              "identifier": "timeline.abM81lMifn6q",
-              "tags": "",
-              "title": "Number (1=Sunday) (Timeline)"
-            }
-          }
-        },
-        "Day of Week (Mon-Sun) (Timeline)": {
-          "identifier": "timeline.day.in.euweek",
-          "tags": "date day eu week",
-          "title": "Day of Week (Mon-Sun) (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.abU81lMifn6q",
-            "tags": "",
-            "title": "Short (Mon) (Timeline)"
-          },
-          "displayForms": {
-            "Short (Mon) (Timeline)": {
-              "identifier": "timeline.abU81lMifn6q",
-              "tags": "",
-              "title": "Short (Mon) (Timeline)"
-            },
-            "Long (Monday) (Timeline)": {
-              "identifier": "timeline.abY81lMifn6q",
-              "tags": "",
-              "title": "Long (Monday) (Timeline)"
-            },
-            "Number (1=Monday) (Timeline)": {
-              "identifier": "timeline.abW81lMifn6q",
-              "tags": "",
-              "title": "Number (1=Monday) (Timeline)"
-            }
-          }
-        },
-        "Day of Quarter (Timeline)": {
-          "identifier": "timeline.day.in.quarter",
-          "tags": "date day quarter",
-          "title": "Day of Quarter (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.ab481lMifn6q",
-            "tags": "",
-            "title": "default (Timeline)"
-          },
-          "displayForms": {
-            "default (Timeline)": {
-              "identifier": "timeline.ab481lMifn6q",
-              "tags": "",
-              "title": "default (Timeline)"
-            }
-          }
-        },
-        "Day of Month (Timeline)": {
-          "identifier": "timeline.day.in.month",
-          "tags": "date day month",
-          "title": "Day of Month (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aca81lMifn6q",
-            "tags": "",
-            "title": "default (Timeline)"
-          },
-          "displayForms": {
-            "default (Timeline)": {
-              "identifier": "timeline.aca81lMifn6q",
-              "tags": "",
-              "title": "default (Timeline)"
-            }
-          }
-        },
-        "Quarter/Year (Timeline)": {
-          "identifier": "timeline.quarter",
-          "tags": "date quarter",
-          "title": "Quarter/Year (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.aci81lMifn6q",
-            "tags": "",
-            "title": "US Short (Timeline)"
-          },
-          "displayForms": {
-            "US Short (Timeline)": {
-              "identifier": "timeline.aci81lMifn6q",
-              "tags": "",
-              "title": "US Short (Timeline)"
-            }
-          }
-        },
-        "Month/Year (Timeline)": {
-          "identifier": "timeline.month",
-          "tags": "date month",
-          "title": "Month/Year (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.act81lMifn6q",
-            "tags": "",
-            "title": "Short (Jan 2010) (Timeline)"
-          },
-          "displayForms": {
-            "Short (Jan 2010) (Timeline)": {
-              "identifier": "timeline.act81lMifn6q",
-              "tags": "",
-              "title": "Short (Jan 2010) (Timeline)"
-            },
-            "Long (January 2010) (Timeline)": {
-              "identifier": "timeline.acx81lMifn6q",
-              "tags": "",
-              "title": "Long (January 2010) (Timeline)"
-            },
-            "Number (1/2010) (Timeline)": {
-              "identifier": "timeline.acv81lMifn6q",
-              "tags": "",
-              "title": "Number (1/2010) (Timeline)"
-            }
-          }
-        },
-        "Date (Timeline)": {
-          "identifier": "timeline.date",
-          "tags": "date",
-          "title": "Date (Timeline)",
-          "defaultDisplayForm": {
-            "identifier": "timeline.date.mmddyyyy",
-            "tags": "",
-            "title": "mm/dd/yyyy (Timeline)"
-          },
-          "displayForms": {
-            "mm/dd/yyyy (Timeline)": {
-              "identifier": "timeline.date.mmddyyyy",
-              "tags": "",
-              "title": "mm/dd/yyyy (Timeline)"
-            },
-            "yyyy-mm-dd (Timeline)": {
-              "identifier": "timeline.date.yyyymmdd",
-              "tags": "",
-              "title": "yyyy-mm-dd (Timeline)"
-            },
-            "m/d/yy (no leading zeroes) (Timeline)": {
-              "identifier": "timeline.date.mdyy",
-              "tags": "",
-              "title": "m/d/yy (no leading zeroes) (Timeline)"
-            },
-            "Long (Mon, Jan 1, 2010) (Timeline)": {
-              "identifier": "timeline.date.long",
-              "tags": "",
-              "title": "Long (Mon, Jan 1, 2010) (Timeline)"
-            },
-            "dd/mm/yyyy (Timeline)": {
-              "identifier": "timeline.date.ddmmyyyy",
-              "tags": "",
-              "title": "dd/mm/yyyy (Timeline)"
-            },
-            "dd-mm-yyyy (Timeline)": {
-              "identifier": "timeline.date.eddmmyyyy",
-              "tags": "",
-              "title": "dd-mm-yyyy (Timeline)"
-            }
-          }
-        }
-      },
-      "title": "Date (Timeline)"
-    },
-    "Date (Fiscal Date)": {
-      "identifier": "fiscaldate.fiscaljun1_dataset.dt",
-      "tags": "",
-      "attributes": {
-        "Year (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_year",
-          "tags": "date year",
-          "title": "Year (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aag81lMifn6q",
-            "tags": "",
-            "title": "Year (Fiscal Date)"
-          },
-          "displayForms": {
-            "Year (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aag81lMifn6q",
-              "tags": "",
-              "title": "Year (Fiscal Date)"
-            }
-          }
-        },
-        "Quarter (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_quarter.in.year",
-          "tags": "date quarter year",
-          "title": "Quarter (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aam81lMifn6q",
-            "tags": "",
-            "title": "default (Fiscal Date)"
-          },
-          "displayForms": {
-            "default (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aam81lMifn6q",
-              "tags": "",
-              "title": "default (Fiscal Date)"
-            }
-          }
-        },
-        "Week (Sun-Sat)/Year (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_week",
-          "tags": "date week",
-          "title": "Week (Sun-Sat)/Year (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aaA81lMifn6q",
-            "tags": "",
-            "title": "Week #/Year (W1/2010) (Fiscal Date)"
-          },
-          "displayForms": {
-            "Week #/Year (W1/2010) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaA81lMifn6q",
-              "tags": "",
-              "title": "Week #/Year (W1/2010) (Fiscal Date)"
-            },
-            "Week Starting (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaw81lMifn6q",
-              "tags": "",
-              "title": "Week Starting (Fiscal Date)"
-            },
-            "From - To (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aau81lMifn6q",
-              "tags": "",
-              "title": "From - To (Fiscal Date)"
-            },
-            "Week #/Year (Cont.) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aay81lMifn6q",
-              "tags": "",
-              "title": "Week #/Year (Cont.) (Fiscal Date)"
-            },
-            "Wk/Qtr/Year (Cont.) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaC81lMifn6q",
-              "tags": "",
-              "title": "Wk/Qtr/Year (Cont.) (Fiscal Date)"
-            },
-            "Wk/Qtr/Year (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aas81lMifn6q",
-              "tags": "",
-              "title": "Wk/Qtr/Year (Fiscal Date)"
-            }
-          }
-        },
-        "Week (Sun-Sat) (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_week.in.year",
-          "tags": "date week year",
-          "title": "Week (Sun-Sat) (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aaI81lMifn6q",
-            "tags": "",
-            "title": "Number US (Fiscal Date)"
-          },
-          "displayForms": {
-            "Number US (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaI81lMifn6q",
-              "tags": "",
-              "title": "Number US (Fiscal Date)"
-            }
-          }
-        },
-        "Week (Sun-Sat) of Qtr (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_week.in.quarter",
-          "tags": "date quarter week",
-          "title": "Week (Sun-Sat) of Qtr (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aaO81lMifn6q",
-            "tags": "",
-            "title": "Number US (Fiscal Date)"
-          },
-          "displayForms": {
-            "Number US (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaO81lMifn6q",
-              "tags": "",
-              "title": "Number US (Fiscal Date)"
-            }
-          }
-        },
-        "Week (Mon-Sun)/Year (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_euweek",
-          "tags": "date eu week",
-          "title": "Week (Mon-Sun)/Year (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aa281lMifn6q",
-            "tags": "",
-            "title": "Week #/Year (W1/2010) (Fiscal Date)"
-          },
-          "displayForms": {
-            "Week #/Year (W1/2010) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aa281lMifn6q",
-              "tags": "",
-              "title": "Week #/Year (W1/2010) (Fiscal Date)"
-            },
-            "Week Starting (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaY81lMifn6q",
-              "tags": "",
-              "title": "Week Starting (Fiscal Date)"
-            },
-            "From - To (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aaW81lMifn6q",
-              "tags": "",
-              "title": "From - To (Fiscal Date)"
-            }
-          }
-        },
-        "Week (Mon-Sun) (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_euweek.in.year",
-          "tags": "date eu week year",
-          "title": "Week (Mon-Sun) (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aba81lMifn6q",
-            "tags": "",
-            "title": "Number EU (Fiscal Date)"
-          },
-          "displayForms": {
-            "Number EU (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aba81lMifn6q",
-              "tags": "",
-              "title": "Number EU (Fiscal Date)"
-            }
-          }
-        },
-        "Week (Mon-Sun) of Qtr (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_euweek.in.quarter",
-          "tags": "date eu quarter week",
-          "title": "Week (Mon-Sun) of Qtr (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_abg81lMifn6q",
-            "tags": "",
-            "title": "Number EU (Fiscal Date)"
-          },
-          "displayForms": {
-            "Number EU (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abg81lMifn6q",
-              "tags": "",
-              "title": "Number EU (Fiscal Date)"
-            }
-          }
-        },
-        "Month (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_month.in.year",
-          "tags": "date month year",
-          "title": "Month (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_abm81lMifn6q",
-            "tags": "",
-            "title": "Short (Jan) (Fiscal Date)"
-          },
-          "displayForms": {
-            "Short (Jan) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abm81lMifn6q",
-              "tags": "",
-              "title": "Short (Jan) (Fiscal Date)"
-            },
-            "Long (January) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abs81lMifn6q",
-              "tags": "",
-              "title": "Long (January) (Fiscal Date)"
-            },
-            "Number (M1) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abq81lMifn6q",
-              "tags": "",
-              "title": "Number (M1) (Fiscal Date)"
-            },
-            "M/Q (M1/Q1) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abo81lMifn6q",
-              "tags": "",
-              "title": "M/Q (M1/Q1) (Fiscal Date)"
-            }
-          }
-        },
-        "Month of Quarter (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_month.in.quarter",
-          "tags": "date month quarter",
-          "title": "Month of Quarter (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aby81lMifn6q",
-            "tags": "",
-            "title": "Number (Fiscal Date)"
-          },
-          "displayForms": {
-            "Number (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aby81lMifn6q",
-              "tags": "",
-              "title": "Number (Fiscal Date)"
-            }
-          }
-        },
-        "Day of Year (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_day.in.year",
-          "tags": "date day year",
-          "title": "Day of Year (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_abE81lMifn6q",
-            "tags": "",
-            "title": "default (Fiscal Date)"
-          },
-          "displayForms": {
-            "default (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abE81lMifn6q",
-              "tags": "",
-              "title": "default (Fiscal Date)"
-            }
-          }
-        },
-        "Day of Week (Sun-Sat) (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_day.in.week",
-          "tags": "date day week",
-          "title": "Day of Week (Sun-Sat) (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_abK81lMifn6q",
-            "tags": "",
-            "title": "Short (Sun) (Fiscal Date)"
-          },
-          "displayForms": {
-            "Short (Sun) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abK81lMifn6q",
-              "tags": "",
-              "title": "Short (Sun) (Fiscal Date)"
-            },
-            "Long (Sunday) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abO81lMifn6q",
-              "tags": "",
-              "title": "Long (Sunday) (Fiscal Date)"
-            },
-            "Number (1=Sunday) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abM81lMifn6q",
-              "tags": "",
-              "title": "Number (1=Sunday) (Fiscal Date)"
-            }
-          }
-        },
-        "Day of Week (Mon-Sun) (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_day.in.euweek",
-          "tags": "date day eu week",
-          "title": "Day of Week (Mon-Sun) (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_abU81lMifn6q",
-            "tags": "",
-            "title": "Short (Mon) (Fiscal Date)"
-          },
-          "displayForms": {
-            "Short (Mon) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abU81lMifn6q",
-              "tags": "",
-              "title": "Short (Mon) (Fiscal Date)"
-            },
-            "Long (Monday) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abY81lMifn6q",
-              "tags": "",
-              "title": "Long (Monday) (Fiscal Date)"
-            },
-            "Number (1=Monday) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_abW81lMifn6q",
-              "tags": "",
-              "title": "Number (1=Monday) (Fiscal Date)"
-            }
-          }
-        },
-        "Day of Quarter (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_day.in.quarter",
-          "tags": "date day quarter",
-          "title": "Day of Quarter (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_ab481lMifn6q",
-            "tags": "",
-            "title": "default (Fiscal Date)"
-          },
-          "displayForms": {
-            "default (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_ab481lMifn6q",
-              "tags": "",
-              "title": "default (Fiscal Date)"
-            }
-          }
-        },
-        "Day of Month (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_day.in.month",
-          "tags": "date day month",
-          "title": "Day of Month (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aca81lMifn6q",
-            "tags": "",
-            "title": "default (Fiscal Date)"
-          },
-          "displayForms": {
-            "default (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aca81lMifn6q",
-              "tags": "",
-              "title": "default (Fiscal Date)"
-            }
-          }
-        },
-        "Quarter/Year (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_quarter",
-          "tags": "date quarter",
-          "title": "Quarter/Year (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_aci81lMifn6q",
-            "tags": "",
-            "title": "US Short (Fiscal Date)"
-          },
-          "displayForms": {
-            "US Short (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_aci81lMifn6q",
-              "tags": "",
-              "title": "US Short (Fiscal Date)"
-            }
-          }
-        },
-        "Month/Year (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_month",
-          "tags": "date month",
-          "title": "Month/Year (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_act81lMifn6q",
-            "tags": "",
-            "title": "Short (Jan 2010) (Fiscal Date)"
-          },
-          "displayForms": {
-            "Short (Jan 2010) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_act81lMifn6q",
-              "tags": "",
-              "title": "Short (Jan 2010) (Fiscal Date)"
-            },
-            "Long (January 2010) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_acx81lMifn6q",
-              "tags": "",
-              "title": "Long (January 2010) (Fiscal Date)"
-            },
-            "Number (1/2010) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_acv81lMifn6q",
-              "tags": "",
-              "title": "Number (1/2010) (Fiscal Date)"
-            }
-          }
-        },
-        "Date (Fiscal Date)": {
-          "identifier": "fiscaldate.fiscaljun1_date",
-          "tags": "date",
-          "title": "Date (Fiscal Date)",
-          "defaultDisplayForm": {
-            "identifier": "fiscaldate.fiscaljun1_date.mmddyyyy",
-            "tags": "",
-            "title": "mm/dd/yyyy (Fiscal Date)"
-          },
-          "displayForms": {
-            "mm/dd/yyyy (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_date.mmddyyyy",
-              "tags": "",
-              "title": "mm/dd/yyyy (Fiscal Date)"
-            },
-            "yyyy-mm-dd (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_date.yyyymmdd",
-              "tags": "",
-              "title": "yyyy-mm-dd (Fiscal Date)"
-            },
-            "m/d/yy (no leading zeroes) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_date.mdyy",
-              "tags": "",
-              "title": "m/d/yy (no leading zeroes) (Fiscal Date)"
-            },
-            "Long (Mon, Jan 1, 2010) (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_date.long",
-              "tags": "",
-              "title": "Long (Mon, Jan 1, 2010) (Fiscal Date)"
-            },
-            "dd/mm/yyyy (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_date.ddmmyyyy",
-              "tags": "",
-              "title": "dd/mm/yyyy (Fiscal Date)"
-            },
-            "dd-mm-yyyy (Fiscal Date)": {
-              "identifier": "fiscaldate.fiscaljun1_date.eddmmyyyy",
-              "tags": "",
-              "title": "dd-mm-yyyy (Fiscal Date)"
-            }
-          }
-        }
-      },
-      "title": "Date (Fiscal Date)"
+      "title": "Date (Billing)"
     }
   }
 }

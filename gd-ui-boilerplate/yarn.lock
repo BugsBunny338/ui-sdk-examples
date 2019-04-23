@@ -950,7 +950,7 @@
   resolved "https://registry.yarnpkg.com/@gooddata/numberjs/-/numberjs-3.2.1.tgz#6cb7321233fd353d3383cc76a7d6bd1c9c5cec0a"
   integrity sha512-eTrAOVuca1qDnrS039wew22osRaFvplviW40IgplyZs/nBcGtPObj2wtR5SEfVyCOol5fSb3vfH5b6A0GbG4dg==
 
-"@gooddata/react-components@^6.2.0":
+"@gooddata/react-components@6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@gooddata/react-components/-/react-components-6.2.0.tgz#fcff8550625edf0ca9df35b10758a2029782213b"
   integrity sha512-anZ1/1STfW4WJxrcyel4OCOdvOeK2FN1rj5FwMU3zwegYAc0ZDeGQIqdz8zIhR3jfwYZ1u6lsUWUrmyBGd3uCw==

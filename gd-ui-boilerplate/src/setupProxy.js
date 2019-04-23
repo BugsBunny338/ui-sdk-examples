@@ -8,9 +8,9 @@ module.exports = function(app) {
     changeOrigin: true,
     cookieDomainRewrite: "localhost",
     secure: false,
-    target: 'https://developer.na.gooddata.com',
+    target: 'https://salesengineering.na.gooddata.com',
     headers: {
-      host: 'developer.na.gooddata.com',
+      host: 'salesengineering.na.gooddata.com',
       origin: null
     }
   }));
@@ -18,6 +18,6 @@ module.exports = function(app) {
     changeOrigin: true,
     secure: false,
     cookieDomainRewrite: 'localhost',
-    target: 'https://developer.na.gooddata.com'
+    target: 'https://salesengineering.na.gooddata.com'
   }));
 };

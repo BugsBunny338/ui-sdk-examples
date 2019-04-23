@@ -89,16 +89,16 @@ class App extends Component {
           <AttributeDropdown
             {...config}
             filterGroup={FG_MAIN}
-            attribute={C.attributeDisplayForm('Location City')}
-            placeholder="Filter cities"
+            attribute={C.attributeDisplayForm('Category')}
+            placeholder="Category"
             onChange={this.handleOutcomingCityFilterChange}
           />
         </div>
         <div>
-          # of Location City: <Kpi
+          $ Ab Cost: <Kpi
             {...config}
             filterGroup={FG_MAIN}
-            measure={C.measure('# Location City')}
+            measure={C.measure('$ Ab Cost')}
           />
           <br />
           <br />
@@ -107,16 +107,28 @@ class App extends Component {
           <Visualization
             {...config}
             filterGroup={FG_MAIN}
-            identifier="aby6oS6DbpFX"
+            config={{
+              legend: {
+                enabled: true,
+                position: 'right'
+              }
+            }}
+            identifier={C.visualization('Category/RT Costs (by Jiri)')}
           />
         </div>
         <div style={{ height: 400 }}>
           <ColumnChart
             {...config}
             filterGroup={FG_MAIN}
-            measures={[Model.measure(C.measure('# Checks'))]}
-            viewBy={Model.attribute(C.attributeDisplayForm('Location City'))}
-            stackBy={Model.attribute(C.attributeDisplayForm('Location Name'))}
+            measures={[Model.measure(C.measure('$ Ab Cost'))]}
+            viewBy={Model.attribute(C.attributeDisplayForm('Category'))}
+            stackBy={Model.attribute(C.attributeDisplayForm('Resource Type'))}
+            config={{
+              legend: {
+                enabled: true,
+                position: 'right'
+              }
+            }}
           />
         </div>
         <div style={{ height: 400 }}>
@@ -129,7 +141,7 @@ class App extends Component {
                 definition: {
                   measure: {
                     item: {
-                      identifier: C.measure('# Checks')
+                      identifier: C.measure('$ Ab Cost')
                     }
                   }
                 }
@@ -137,7 +149,7 @@ class App extends Component {
               attributes: [{
                 localIdentifier: 'a1',
                 displayForm: {
-                  identifier: C.attributeDisplayForm('Location City')
+                  identifier: C.attributeDisplayForm('Category')
                 }
               }]
             }}

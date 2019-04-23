@@ -7,7 +7,7 @@ const config = {
 };
 
 if (process.env.NODE_ENV === 'production') {
-  config.domain = 'https://developer.na.gooddata.com';
+  config.domain = 'https://salesengineering.na.gooddata.com';
 }
 
 export const sdk = factory(config);
