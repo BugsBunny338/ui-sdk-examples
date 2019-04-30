@@ -422,10 +422,25 @@
       "tags": "",
       "title": "Test"
     },
-    "Category/RT Costs (by Jiri)": {
+    "Category/RT Costs (Bar by Jiri)": {
       "identifier": "aaVDdPFygGdE",
       "tags": "",
-      "title": "Category/RT Costs (by Jiri)"
+      "title": "Category/RT Costs (Bar by Jiri)"
+    },
+    "Nb cost by category": {
+      "identifier": "aaMWn3HdfFIY",
+      "tags": "",
+      "title": "Nb cost by category"
+    },
+    "Instance types by region": {
+      "identifier": "acPdiacgcQy8",
+      "tags": "",
+      "title": "Instance types by region"
+    },
+    "$ Ab Cost by Category (Pie by Jiri)": {
+      "identifier": "aatgVqhsbVXD",
+      "tags": "",
+      "title": "$ Ab Cost by Category (Pie by Jiri)"
     }
   },
   "dateDataSets": {
