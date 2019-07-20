@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Headline, ColumnChart, Execute, Visualization } from './components/afmConnected';
-import { Model } from '@gooddata/react-components';
+import { Headline, ColumnChart, Execute } from './components/afmConnected';
+import { Visualization, Model } from '@gooddata/react-components';
 import C from './catalog';
 import config from './config';
 import { FG_MAIN } from './constants';
@@ -53,8 +53,13 @@ class App extends Component {
         <div style={{ height: 400 }}>
           <Visualization
             {...config}
-            filterGroup={FG_MAIN}
-            identifier="aby6oS6DbpFX"
+            identifier="aaDKNE91d2wl"
+          />
+        </div>
+        <div style={{ height: 400 }}>
+          <Visualization
+            {...config}
+            identifier="aaTJJW6adsaj"
           />
         </div>
         <div style={{ height: 400 }}>

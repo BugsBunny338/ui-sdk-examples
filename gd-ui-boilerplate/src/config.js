@@ -20,5 +20,5 @@ export const domain = config.domain;
 export default {
   projectId,
   sdk,
-  domain: config.domain
+  domain
 };
