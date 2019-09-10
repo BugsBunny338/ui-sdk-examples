@@ -19,8 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildgd": "cross-env PUBLIC_URL=/gd-ui-boilerplate yarn build",
-    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/gd-ui-boilerplate/"
+    "buildgd": "cross-env PUBLIC_URL=/gd-ui-boilerplate-pp-postmessage-filtering yarn build",
+    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/gd-ui-boilerplate-pp-postmessage-filtering/"
   },
   "eslintConfig": {
     "extends": "react-app"
