@@ -55,7 +55,8 @@ class App extends Component {
             name: "drillableItems",
             data: {
               identifiers: [
-                C.dateDataSetDisplayForm('Date (Date)', 'Quarter/Year (Date)')
+                C.dateDataSetDisplayForm('Date (Date)', 'Quarter/Year (Date)'),
+                C.measure('# Checks')
               ]
             }
           }
@@ -183,10 +184,21 @@ class App extends Component {
       return <span>Checking your credentials, please wait…</span>;
     }
 
+    setTimeout(() => {
+      alert('now');
+      // console.log('#gooddata', $('iframe')[0].contentWindow); // eslint-disable-line no-undef
+      console.log(document.querySelector('#gooddata').contentDocument);
+      $('#gooddata').contents().find('.kpi-value-value').css('color','red'); // eslint-disable-line no-undef
+
+      $('#gooddata').contents().find("head") // eslint-disable-line no-undef
+        .append($("<style type='text/css'> * { color: red !important; } </style>")); // eslint-disable-line no-undef
+    }, 15000);
+
     return (
       <div className="App">
         {this.renderPopup()}
-        <iframe id="gooddata" title="KD" src="https://developer.na.gooddata.com/dashboards/embedded/#/project/xms7ga4tf3g3nzucd8380o2bev8oeknp/dashboard/aby7cMBNeo0Y"></iframe>
+        {/* <iframe id="gooddata" title="KD" src="https://developer.na.gooddata.com/dashboards/embedded/#/project/xms7ga4tf3g3nzucd8380o2bev8oeknp/dashboard/aby7cMBNeo0Y"></iframe> */}
+        <iframe id="gooddata" title="KD" src="https://developer.na.gooddata.com/dashboards/embedded/#/project/xms7ga4tf3g3nzucd8380o2bev8oeknp/dashboard/abTIt0ngdlUH"></iframe>
       </div>
     );
   }

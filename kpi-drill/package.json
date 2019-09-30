@@ -16,8 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildgd": "cross-env PUBLIC_URL=/kpi-drill yarn build",
-    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/kpi-drill/"
+    "buildgd": "cross-env PUBLIC_URL=/kpi-css-override yarn build",
+    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/kpi-css-override/"
   },
   "eslintConfig": {
     "extends": "react-app"
