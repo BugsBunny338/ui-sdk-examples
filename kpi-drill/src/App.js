@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Headline, ColumnChart } from '@gooddata/react-components';
+import { Headline, ColumnChart, Model } from '@gooddata/react-components';
 
 import config, { sdk as gooddata } from './config';
 import { loginMachinery } from './utils';
@@ -7,6 +7,9 @@ import C from './catalog';
 
 import '@gooddata/react-components/styles/css/main.css';
 import './App.css';
+
+const measureTitle = '[SUM] Meter Reading';
+const measure = C.measure(measureTitle);
 
 class App extends Component {
   constructor(props) {
@@ -16,7 +19,6 @@ class App extends Component {
       isLogged: false,
       isPopup: false,
       title: '',
-      measure: {},
       filters: []
     };
 
@@ -54,9 +56,7 @@ class App extends Component {
           event: {
             name: "drillableItems",
             data: {
-              identifiers: [
-                C.dateDataSetDisplayForm('Date (Date)', 'Quarter/Year (Date)')
-              ]
+              identifiers: [measure]
             }
           }
         }
@@ -67,26 +67,16 @@ class App extends Component {
     if (data && data.gdc && data.gdc.event && data.gdc.event.name === 'drill') {
       // It has been clicked into the chart --> show the pop-up
       const drillData = data.gdc.event.data;
-      const measure = {
-        uri: drillData.drillContext.intersection[0].header.uri,
-        title: drillData.drillContext.intersection[0].title
-      };
-      const date = {
+      const attribute = {
         uri: drillData.drillContext.intersection[1].header.uri,
         id: drillData.drillContext.intersection[1].id,
         title: drillData.drillContext.intersection[1].title
       };
-      const attribute = {
-        uri: drillData.drillContext.intersection[2].header.uri,
-        id: drillData.drillContext.intersection[2].id,
-        title: drillData.drillContext.intersection[2].title
-      };
       const executionContextFilters = drillData.executionContext.filters || [];
 
-      // console.log(drillData);
+      console.log(drillData);
 
       Promise.all([
-        gooddata.md.getObjectDetails(date.uri),
         gooddata.md.getObjectDetails(attribute.uri)
       ]).then(results => {
         // Drill event tells what attributeDisplayForm uri was clicked on,
@@ -95,37 +85,15 @@ class App extends Component {
         // BTW This is crazy not optimized and serves only as demonstration!
         this.setState({
           isPopup: true,
-          title: date.title,
-          measure: {
-            measure: {
-              localIdentifier: 'm1',
-              definition: {
-                measureDefinition: {
-                  item: {
-                    uri: measure.uri
-                  },
-                  aggregation: 'sum'
-                }
-              },
-              alias: measure.title
-            }
-          },
+          title: attribute.title,
           filters: [
             ...executionContextFilters,
             {
               positiveAttributeFilter: {
                 displayForm: {
-                  uri: date.uri
-                },
-                in: [`${results[0].attributeDisplayForm.content.formOf}/elements?id=${date.id}`]
-              }
-            },
-            {
-              positiveAttributeFilter: {
-                displayForm: {
                   uri: attribute.uri
                 },
-                in: [`${results[1].attributeDisplayForm.content.formOf}/elements?id=${attribute.id}`]
+                in: [`${results[0].attributeDisplayForm.content.formOf}/elements?id=${attribute.id}`]
               }
             }
           ]
@@ -135,7 +103,7 @@ class App extends Component {
   }
 
   renderPopup() {
-    const { isPopup, title, measure, filters } = this.state;
+    const { isPopup, title, filters } = this.state;
 
     if (isPopup) {
       return (
@@ -143,28 +111,13 @@ class App extends Component {
           <div className="popup">
             <div className="popup-close" onClick={() => this.setState({ isPopup: false })}>✕</div>
             <div className="headline">
-              {measure.measure.alias} <Headline {...config} primaryMeasure={measure} filters={filters} /> for {title}
+              {measureTitle} <Headline {...config} primaryMeasure={Model.measure(measure)} filters={filters} /> for hour {title}
             </div>
             <div className="chart">
               <ColumnChart
                 {...config}
-                measures={[measure]}
-                viewBy={{
-                  visualizationAttribute: {
-                    localIdentifier: 'a1',
-                    displayForm: {
-                      identifier: C.dateDataSetDisplayForm('Date (Date)', 'Month/Year (Date)')
-                    }
-                  }
-                }}
-                stackBy={{
-                  visualizationAttribute: {
-                    localIdentifier: 'a2',
-                    displayForm: {
-                      identifier: C.attributeDisplayForm('Location City')
-                    }
-                  }
-                }}
+                measures={[Model.measure(measure)]}
+                viewBy={Model.attribute(C.attributeDisplayForm('Minute HH:MM'))}
                 filters={filters}
               />
             </div>
@@ -186,7 +139,7 @@ class App extends Component {
     return (
       <div className="App">
         {this.renderPopup()}
-        <iframe id="gooddata" title="KD" src="https://developer.na.gooddata.com/dashboards/embedded/#/project/xms7ga4tf3g3nzucd8380o2bev8oeknp/dashboard/aby7cMBNeo0Y"></iframe>
+        <iframe id="gooddata" title="KD" src="https://secure.gooddata.com/dashboards/embedded/#/project/w27zvnmuxbtv9hc2q9v07hmjddr7chxb/dashboard/aaSwjxn5fLns"></iframe>
       </div>
     );
   }

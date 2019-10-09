@@ -1,26 +1,25 @@
-# KPI Dashboards Drilling
+# KPI Dashboards Drilling Over Huge Dataset (2B Rows)
 
 This app demonstrates how to implement drilling in KPI Dashboards.
 
 ## Live demo
 
-This app is deployed at https://gooddata-demo.s3.amazonaws.com/kpi-drill/index.html. For access, you can register at https://gooddata-examples.herokuapp.com/.
+There is no live demo, since this runs against https://secure.gooddata.com/ where there is no CORS allowed.
 
 ## How to run locally
 
-* `git clone --depth 1 https://github.com/gooddata/ui-sdk-examples.git`
+* `git clone --depth 1 --single-branch --branch kpi-drill-large-dataset https://github.com/BugsBunny338/ui-sdk-examples.git`
 * `cd ui-sdk-examples/kpi-drill/`
 * `yarn install --pure-lockfile` (or `npm install`)
-* `yarn start`
+* `yarn start` or `GD_URL=secure.gooddata.com yarn start`
 
 ## How to build for deployment
 
-* `npm run build` when deploying to root folder
-* `PUBLIC_URL=/kpi-drill yarn build` when deploying to `/kpi-drill` folder
+This demo won't work when deployed becase of CORS. It is only meant to be run at localhost using proxy settings.
 
 ## Backend/proxy info
 
-This app is configured to run against https://developer.na.gooddata.com/. For access, you can register at https://gooddata-examples.herokuapp.com/.
+This app is configured to run against https://secure.gooddata.com/.
 
 ## Compatibility
 
@@ -28,8 +27,8 @@ An ES6 [@babel/polyfill](https://babeljs.io/docs/en/babel-polyfill) was added to
 
 ## Screnshots
 
-![homepage](https://raw.githubusercontent.com/gooddata/ui-sdk-examples/master/kpi-drill/public/screen1.png "Homepage")
-![homepage embedded](https://raw.githubusercontent.com/gooddata/ui-sdk-examples/master/kpi-drill/public/screen2.png "Homepage embedded")
+![homepage](public/screen1.png "Homepage")
+![popup](public/screen2.png "Homepage embedded")
 
 ---
 
