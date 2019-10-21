@@ -2,14 +2,14 @@ import React from 'react';
 import { AttributeElements, Model } from '@gooddata/react-components';
 import Select from 'react-select';
 
-function AttributeDropdown({ sdk, projectId, placeholder, attribute, filters, updateFilters }) {
+function AttributeDropdown({ sdk, projectId, placeholder, attribute, filter, updateFilter }) {
   const onChangeFilter = (options) => {
     if (options.length) {
-      updateFilters([
+      updateFilter(
         Model.positiveAttributeFilter(attribute, options.map(option => option.value))
-      ]);
+      );
     } else {
-      updateFilters([]);
+      updateFilter(null);
     }
   };
 
@@ -24,8 +24,8 @@ function AttributeDropdown({ sdk, projectId, placeholder, attribute, filters, up
           label: item.element.title,
           value: item.element.uri
         })) : [];
-        const selectedOptions = filters.length ?
-          filters[0].positiveAttributeFilter.in : [];
+        const selectedOptions = filter ?
+          filter.positiveAttributeFilter.in : [];
         return (
           <Select
             isMulti
