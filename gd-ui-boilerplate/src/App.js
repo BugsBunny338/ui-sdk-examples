@@ -1,14 +1,25 @@
 import React, { useState, useEffect } from 'react';
-import { Headline, ColumnChart, Execute, Visualization, Model, DateFilter, DateFilterHelpers } from '@gooddata/react-components';
+import {
+  Headline,
+  ColumnChart,
+  Execute,
+  Visualization,
+  Model,
+  AttributeFilter,
+  DateFilter,
+  DateFilterHelpers
+} from '@gooddata/react-components';
 import C from './catalog';
 import config from './config';
-import AttributeDropdown from './components/AttributeDropdown';
 import CustomBarChart from './components/CustomBarChart';
 import { loginMachinery } from './utils';
 
 import '@gooddata/react-components/styles/css/main.css';
 import '@gooddata/react-components/styles/css/dateFilter.css';
 import './App.css';
+
+const attributeFilterDefault =
+  Model.negativeAttributeFilter(C.attributeDisplayForm('Location City'), [], true);
 
 const dateFilterOptions = {
   allTime: {
@@ -45,7 +56,7 @@ const dateFilterOptions = {
 function App() {
   const [isLogged, setIsLogged] = useState(false);
   const [dateFilter, setDateFilter] = useState(dateFilterOptions.allTime);
-  const [attributeFilter, setAtributeFilter] = useState(null);
+  const [attributeFilter, setAttributeFilter] = useState(attributeFilterDefault);
 
   useEffect(() => {
     loginMachinery({ ...config }, () => setIsLogged(true));
@@ -55,22 +66,38 @@ function App() {
     return <span>Checking your credentials, please wait…</span>;
   }
 
-  const filters = [
-    DateFilterHelpers.mapOptionToAfm(dateFilter, {
-      identifier: C.dateDataSet('Date (Date)')
-    }),
-    attributeFilter
-  ].filter(filter => !!filter);
+  const afmDateFilter = DateFilterHelpers.mapOptionToAfm(dateFilter, {
+    identifier: C.dateDataSet('Date (Date)')
+  });
+  const filters = [afmDateFilter, attributeFilter].filter(filter => {
+    if (!filter) {
+      return false;
+    }
+
+    // TODO this is because <Execute /> does not accept empty notIn array
+    if (filter.negativeAttributeFilter && !filter.negativeAttributeFilter.notIn.length) {
+      return false;
+    }
+
+    return true;
+  });
 
   return (
     <div className="App">
       <div style={{ width: 400, margin: 'auto', marginBottom: 20, marginTop: 20 }}>
-        <AttributeDropdown
+        <AttributeFilter
           {...config}
-          placeholder="Filter cities"
-          attribute={C.attributeDisplayForm('Location City')}
           filter={attributeFilter}
-          updateFilter={setAtributeFilter}
+          onApplyWithFilterDefinition={(filter) => {
+            if (filter.positiveAttributeFilter && !filter.positiveAttributeFilter.in.length) {
+              // TODO this is because positiveAttributeFilter with no specified values does not make sense
+              setAttributeFilter(attributeFilterDefault);
+            } else {
+              setAttributeFilter(filter);
+            }
+          }}
+          // TODO following should not be required
+          onApply={() => {}}
         />
       </div>
       <div style={{ width: 400, margin: 'auto', marginBottom: 20, marginTop: 20 }}>
