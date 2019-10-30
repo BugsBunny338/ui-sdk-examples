@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>icon_q_bl</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon_q_bl" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(13.000000, 13.000000) rotate(-90.000000) translate(-13.000000, -13.000000) " fill-rule="nonzero">
+            <g id="Group-5">
+                <path d="M5,2 C3.34314575,2 2,3.34314575 2,5 L2,21 C2,22.6568542 3.34314575,24 5,24 L21,24 C22.6568542,24 24,22.6568542 24,21 L24,5 C24,3.34314575 22.6568542,2 21,2 L5,2 Z M5,0 L21,0 C23.7614237,-5.07265313e-16 26,2.23857625 26,5 L26,21 C26,23.7614237 23.7614237,26 21,26 L5,26 C2.23857625,26 3.38176876e-16,23.7614237 0,21 L0,5 C-3.38176876e-16,2.23857625 2.23857625,5.07265313e-16 5,0 Z" id="Rectangle-Copy-17" fill="#6C6D70"></path>
+                <circle id="Oval" fill="#00B2B3" cx="7" cy="7" r="3"></circle>
+            </g>
+            <path d="M13.5,4.5 L12.5,4.5 L12.5,12.5 L4.5,12.5 L4.5,13.5 L12.5,13.5 L12.5,21.5 L13.5,21.5 L13.5,13.5 L21.5,13.5 L21.5,12.5 L13.5,12.5 L13.5,4.5 Z" id="Combined-Shape" stroke="#6C6D70" fill="#D8D8D8"></path>
+        </g>
+    </g>
+</svg>

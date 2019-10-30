@@ -4,6 +4,7 @@ import C from './catalog';
 import config from './config';
 import AttributeDropdown from './components/AttributeDropdown';
 import CustomBarChart from './components/CustomBarChart';
+import LineChart from './components/LineChart';
 import { loginMachinery } from './utils';
 
 import '@gooddata/react-components/styles/css/main.css';
@@ -40,6 +41,9 @@ function App() {
         />
         <br />
         <br />
+      </div>
+      <div style={{ height: 400 }}>
+        <LineChart />
       </div>
       <div style={{ height: 400 }}>
         <Visualization

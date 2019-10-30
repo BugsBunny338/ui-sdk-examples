@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4px" height="7px" viewBox="0 0 4 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Campaign-Optimization" transform="translate(-226.000000, -350.000000)" fill="#FFFFFF">
+            <g id="Button:-All-Campaigns" transform="translate(219.000000, 341.000000)">
+                <path d="M10.4851485,9.0634375 L10.4413757,9.1028125 L7.17926003,12.0778125 C7.06878583,12.1784375 7,12.329375 7,12.4978125 C7,12.66625 7.07087024,12.8171875 7.17926003,12.9178125 L10.4351225,15.890625 L10.4893174,15.9409375 C10.5414278,15.978125 10.6039604,16 10.6706618,16 C10.8520063,16 11,15.838125 11,15.636875 L11,9.363125 C11,9.161875 10.8520063,9 10.6706618,9 C10.601876,9 10.537259,9.0240625 10.4851485,9.0634375 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
