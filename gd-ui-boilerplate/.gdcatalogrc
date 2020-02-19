@@ -1,4 +1,4 @@
 {
-    "hostname": "https://developer.na.gooddata.com",
+    "hostname": "https://bidev.dataxu.com",
     "output": "src/catalog.json"
 }

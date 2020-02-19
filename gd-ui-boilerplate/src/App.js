@@ -26,17 +26,17 @@ function App() {
       <div style={{ width: 400, margin: 'auto', marginBottom: 20, marginTop: 20 }}>
         <AttributeDropdown
           {...config}
-          placeholder="Filter cities"
-          attribute={C.attributeDisplayForm('Location City')}
+          placeholder="Filter devices"
+          attribute={C.attributeDisplayForm('Device Type')}
           filters={filters}
           updateFilters={setFilters}
         />
       </div>
       <div>
-        # of Location City: <Headline
+        Spend: <Headline
           {...config}
           filters={filters}
-          primaryMeasure={Model.measure(C.measure('# Location City'))}
+          primaryMeasure={Model.measure(C.measure('Spend'))}
         />
         <br />
         <br />
@@ -45,16 +45,24 @@ function App() {
         <Visualization
           {...config}
           filters={filters}
-          identifier="aby6oS6DbpFX"
+          identifier="aau4chNcel8b"
         />
       </div>
       <div style={{ height: 400 }}>
         <ColumnChart
           {...config}
           filters={filters}
-          measures={[Model.measure(C.measure('# Checks'))]}
-          viewBy={Model.attribute(C.attributeDisplayForm('Location City'))}
-          stackBy={Model.attribute(C.attributeDisplayForm('Location Name'))}
+          measures={[
+            Model.measure(C.measure('Spend % of Whole')),
+            Model.measure(C.measure('Actions % of Whole')),
+            Model.measure(C.measure('Clicks % of Whole'))
+          ]}
+          viewBy={Model.attribute(C.attributeDisplayForm('Device Type'))}
+          config={{
+            // colors: ['rgb(241,135,2)', 'rgb(107,192,216)', 'rgb(133,209,188)'],
+            stackMeasures: true,
+            stackMeasuresToPercent: true
+          }}
         />
       </div>
       <div style={{ height: 400 }}>
@@ -66,7 +74,7 @@ function App() {
               definition: {
                 measure: {
                   item: {
-                    identifier: C.measure('# Checks')
+                    identifier: C.measure('Spend % of Whole')
                   }
                 }
               }
@@ -74,7 +82,7 @@ function App() {
             attributes: [{
               localIdentifier: 'a1',
               displayForm: {
-                identifier: C.attributeDisplayForm('Location City')
+                identifier: C.attributeDisplayForm('Device Type')
               }
             }],
             filters
