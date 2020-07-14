@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@gooddata/react-components": "^7.1.1",
+    "jquery": "^1.11.3",
     "node-sass": "^4.9.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -16,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildgd": "cross-env PUBLIC_URL=/gd-ui-boilerplate yarn build",
-    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/gd-ui-boilerplate/"
+    "buildgd": "cross-env PUBLIC_URL=/gd-ui-boilerplate-gduni yarn build",
+    "syncgd": "s3cmd --config .s3cfg sync --delete-removed ./build/ s3://gooddata-demo/gd-ui-boilerplate-gduni/"
   },
   "eslintConfig": {
     "extends": "react-app"

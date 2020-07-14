@@ -8,7 +8,7 @@ const config = {
 
 if (process.env.NODE_ENV === 'production') {
   const gdUrl = process.env.GD_URL;
-  config.domain = gdUrl ? `https://${gdUrl}` : 'https://developer.na.gooddata.com';
+  config.domain = gdUrl ? `https://${gdUrl}` : 'https://university.na.gooddata.com';
 }
 
 export const sdk = factory(config);

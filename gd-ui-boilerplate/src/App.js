@@ -6,8 +6,12 @@ import AttributeDropdown from './components/AttributeDropdown';
 import CustomBarChart from './components/CustomBarChart';
 import { loginMachinery } from './utils';
 
+import jquery from 'jquery';
+
 import '@gooddata/react-components/styles/css/main.css';
 import './App.css';
+
+window.jQuery = jquery;
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);

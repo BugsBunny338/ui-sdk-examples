@@ -2,9 +2,9 @@
 export const loginMachinery = ({ sdk, projectId, domain }, callback = () => {}) => {
   const redirectToLogin = () => {
     if (domain) {
-      window.location.replace(`${domain}/account.html?lastUrl=${encodeURIComponent(window.location)}`);
+      // window.location.replace(`${domain}/account.html?lastUrl=${encodeURIComponent(window.location)}`);
     } else {
-      window.location.replace(`https://${window.location.hostname}:${window.location.port}/account.html?lastUrl=${encodeURIComponent(window.location)}`);
+      // window.location.replace(`https://${window.location.hostname}:${window.location.port}/account.html?lastUrl=${encodeURIComponent(window.location)}`);
     }
   };
 

@@ -1,5 +1,5 @@
 const proxy = require('http-proxy-middleware');
-const url = process.env.GD_URL || 'developer.na.gooddata.com';
+const url = process.env.GD_URL || 'university.na.gooddata.com';
 
 module.exports = function(app) {
   // when '/packages' route below is removed,

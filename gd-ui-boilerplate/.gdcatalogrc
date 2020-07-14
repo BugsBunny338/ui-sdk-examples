@@ -1,4 +1,4 @@
 {
-    "hostname": "https://developer.na.gooddata.com",
+    "hostname": "https://university.na.gooddata.com",
     "output": "src/catalog.json"
 }

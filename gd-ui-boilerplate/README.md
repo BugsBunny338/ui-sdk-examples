@@ -26,7 +26,7 @@ This app is deployed at https://gooddata-demo.s3.amazonaws.com/gd-ui-boilerplate
 * `git clone --depth 1 https://github.com/gooddata/ui-sdk-examples.git`
 * `cd ui-sdk-examples/gd-ui-boilerplate/`
 * `yarn install --pure-lockfile` (or `npm install`)
-* `yarn start` (or `GD_URL=developer.na.gooddata.com yarn start`)
+* `yarn start` (or `GD_URL=university.na.gooddata.com yarn start`)
 
 ## How to build for deployment
 
@@ -35,7 +35,7 @@ This app is deployed at https://gooddata-demo.s3.amazonaws.com/gd-ui-boilerplate
 
 ## Backend/proxy info
 
-This app is configured to run against https://developer.na.gooddata.com/. For access, you can register at https://gooddata-examples.herokuapp.com/.
+This app is configured to run against https://university.na.gooddata.com/. For access, you can register at https://gooddata-examples.herokuapp.com/.
 
 ## Compatibility
 
