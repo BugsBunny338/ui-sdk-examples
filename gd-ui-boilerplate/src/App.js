@@ -26,8 +26,8 @@ function App() {
       <div style={{ width: 400, margin: 'auto', marginBottom: 20, marginTop: 20 }}>
         <AttributeDropdown
           {...config}
-          placeholder="Filter cities"
-          attribute={C.attributeDisplayForm('Location City')}
+          placeholder="Filter by Status"
+          attribute={C.attributeDisplayForm('Status')}
           filters={filters}
           updateFilters={setFilters}
         />
@@ -36,7 +36,7 @@ function App() {
         # of Location City: <Headline
           {...config}
           filters={filters}
-          primaryMeasure={Model.measure(C.measure('# Location City'))}
+          primaryMeasure={Model.measure(C.measure('All Reservations'))}
         />
         <br />
         <br />
@@ -45,16 +45,16 @@ function App() {
         <Visualization
           {...config}
           filters={filters}
-          identifier="aby6oS6DbpFX"
+          identifier="aawOG26WdUyh"
         />
       </div>
       <div style={{ height: 400 }}>
         <ColumnChart
           {...config}
           filters={filters}
-          measures={[Model.measure(C.measure('# Checks'))]}
-          viewBy={Model.attribute(C.attributeDisplayForm('Location City'))}
-          stackBy={Model.attribute(C.attributeDisplayForm('Location Name'))}
+          measures={[Model.measure(C.measure('All Reservations'))]}
+          viewBy={Model.attribute(C.attributeDisplayForm('Status'))}
+          stackBy={Model.attribute(C.attributeDisplayForm('Active'))}
         />
       </div>
       <div style={{ height: 400 }}>
@@ -66,7 +66,7 @@ function App() {
               definition: {
                 measure: {
                   item: {
-                    identifier: C.measure('# Checks')
+                    identifier: C.measure('All Reservations')
                   }
                 }
               }
@@ -74,7 +74,7 @@ function App() {
             attributes: [{
               localIdentifier: 'a1',
               displayForm: {
-                identifier: C.attributeDisplayForm('Location City')
+                identifier: C.attributeDisplayForm('Status')
               }
             }],
             filters
