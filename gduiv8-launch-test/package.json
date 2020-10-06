@@ -8,13 +8,13 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "@gooddata/sdk-backend-bear": "8.0.0-beta.92",
-    "@gooddata/sdk-model": "8.0.0-beta.92",
-    "@gooddata/sdk-ui": "8.0.0-beta.92",
-    "@gooddata/sdk-ui-charts": "8.0.0-beta.92",
-    "@gooddata/sdk-ui-ext": "8.0.0-beta.92",
-    "@gooddata/sdk-ui-filters": "8.0.0-beta.92",
-    "@gooddata/sdk-ui-pivot": "8.0.0-beta.92",
+    "@gooddata/sdk-backend-bear": "^8.0.0-beta.107",
+    "@gooddata/sdk-model": "^8.0.0-beta.107",
+    "@gooddata/sdk-ui": "^8.0.0-beta.107",
+    "@gooddata/sdk-ui-charts": "^8.0.0-beta.107",
+    "@gooddata/sdk-ui-ext": "^8.0.0-beta.107",
+    "@gooddata/sdk-ui-filters": "^8.0.0-beta.107",
+    "@gooddata/sdk-ui-pivot": "^8.0.0-beta.107",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-highcharts": "16.1.0",
@@ -28,7 +28,8 @@
     "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "upgrade-sdk": "yarn upgrade --latest --caret -P '@gooddata/(reference-|api-|sdk-|util)'"
   },
   "browserslist": [
     ">0.2%",
